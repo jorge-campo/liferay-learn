@@ -61,7 +61,7 @@ The example module defines a greeting API.
     The JAR file is generated to the module's `build/libs` folder.
 
     ```
-    k8s2-api/build/libs/com.liferay.learn.k8s2.api-1.0.0.jar
+    k8s2-api/build/libs/com.acme.k8s2.api-1.0.0.jar
     ```
 
 1. Start a [Liferay Docker container](../../installation-and-upgrades/installing-liferay/using-liferay-dxp-docker-images/dxp-docker-container-basics.md).
@@ -73,15 +73,17 @@ The example module defines a greeting API.
 1. Deploy the module JAR.
 
     ```bash
-    docker cp k8s2-api/build/libs/com.liferay.learn.k8s2.api-1.0.0.jar $(docker ps -lq):/opt/liferay/deploy
+    docker cp k8s2-api/build/libs/com.acme.k8s2.api-1.0.0.jar $(docker ps -lq):/opt/liferay/deploy
     ```
 
     Log messages show Liferay processing the JAR and starting the module.
 
     ```
-    Processing com.liferay.learn.k8s2.api-1.0.0.jar
-    STARTED com.liferay.learn.k8s2.api_1.0.0
+    Processing com.acme.k8s2.api-1.0.0.jar
+    STARTED com.acme.k8s2.api_1.0.0 [1152]
     ```
+
+    The `STARTED` message includes module's ID: `1152`
 
 1. Go to `http://localhost:8080` and sign in using the default credentials:
 
@@ -91,41 +93,41 @@ The example module defines a greeting API.
 
 1. Open the [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md).
 
-1. In the Gogo Shell command field, use `lb` to show the module's basic information, including its ID.
+1. In the Gogo Shell command field, use `lb` to show the module's basic information, including its ID. The most recently added module is listed last. Otherwise, if you know a keyword in the module name, you can `grep` for it.
 
     ```bash
-    lb | grep -i "K8S2 Greeting API"
+    lb | grep -i "k8s2"
     ```
 
     Output:
 
     ```
-    1193|Active     |   15|Acme K8S2 Greeting API (1.0.0)|1.0.0
+    1152|Active     |   15|Acme K8S2 Greeting API (1.0.0)|1.0.0
     ```
 
-    This module's ID is `1193`.
+    This module's ID is `1152`.
 
 1. Use the `b` command and the module ID to show more information about the module.
 
     ```bash
-    b 1193
+    b 1152
     ```
 
     Output:
 
     ```
-    com.liferay.learn.k8s2.api_1.0.0 [1193]
-    Id=1193, Status=ACTIVE      Data Root=[Liferay Home]/osgi/state/org.eclipse.osgi/1193/data
+    com.acme.k8s2.api_1.0.0 [1152]
+    Id=1152, Status=ACTIVE      Data Root=[Liferay Home]/osgi/state/org.eclipse.osgi/1152/data
       "No registered services."
       No services in use.
       Exported packages
-        com.acme.k8s2.greeting; version="1.0.0"[exported]
+        com.acme.k8s2; version="1.0.0"[exported]
       No imported packages
       No fragment bundles
       No required bundles
     ```
 
-The module is active and exports a package called `com.acme.k8s2.greeting`.
+The module is active and exports a package called `com.acme.k8s2`.
 
 Now that you have installed and activated the module, take a closer look at the module and its supporting infrastructure.
 
@@ -159,7 +161,7 @@ Here's the `k8s2-api` module structure in the context of the module root.
  │   └── src
  │       └── main
  │           └── java
- │               └── com/acme/k8s2/greeting
+ │               └── com/acme/k8s2
  │                   └── Greeting.java
  │
  └── [Gradle files]
@@ -172,7 +174,7 @@ The `k8s2-api` module folder contains a `bnd.bnd` metadata file, a `build.gradle
 The example module has only one Java class: an interface called `Greeting`.
 
 ```java
-package com.acme.k8s2.greeting;
+package com.acme.k8s2;
 
 import aQute.bnd.annotation.ProviderType;
 
@@ -222,12 +224,12 @@ The `bnd.bnd` file describes and configures the module.
 
 ```properties
 Bundle-Name: Acme K8S2 Greeting API
-Bundle-SymbolicName: com.liferay.learn.k8s2.api
+Bundle-SymbolicName: com.acme.k8s2.api
 Bundle-Version: 1.0.0
-Export-Package: com.acme.k8s2.greeting
+Export-Package: com.acme.k8s2
 ```
 
-The module's name is *Acme K8S2 Greeting API*. Its symbolic name---a name that ensures uniqueness---is `com.liferay.learn.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2.greeting`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
+The module's name is *Acme K8S2 Greeting API*. Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
 
 #### Generated Metadata
 
@@ -240,10 +242,10 @@ Manifest-Version: 1.0
 Bnd-LastModified: 1598968383025
 Bundle-ManifestVersion: 2
 Bundle-Name: Acme K8S2 Greeting API
-Bundle-SymbolicName: com.liferay.learn.k8s2.api
+Bundle-SymbolicName: com.acme.k8s2.api
 Bundle-Version: 1.0.0
 Created-By: 1.8.0_252 (Oracle Corporation)
-Export-Package: com.acme.k8s2.greeting;version="1.0.0"
+Export-Package: com.acme.k8s2;version="1.0.0"
 Javac-Debug: on
 Javac-Deprecation: off
 Javac-Encoding: UTF-8
@@ -251,7 +253,7 @@ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-4.3.0.201909301554
 ```
 
-Bnd propagated all the headers from the `bnd.bnd` file and added more headers and details. For example, the  exported `com.acme.k8s2.greeting` package has the the default package version `1.0.0`.
+Bnd propagated all the headers from the `bnd.bnd` file and added more headers and details. For example, the  exported `com.acme.k8s2` package has the the default package version `1.0.0`.
 
 ## Conclusion
 
