@@ -1,6 +1,6 @@
 # Module Projects
 
-Liferay customizations and bundled applications are [OSGi modules](https://www.osgi.org/developer/what-is-osgi/). OSGi modules are `.jar` files containing Java code and some extra configuration, for publishing and consuming APIs.
+Liferay applications and customizations are [OSGi modules](https://www.osgi.org/developer/what-is-osgi/): `.jar` files containing Java code and some extra configuration for publishing and consuming APIs.
 
 A module project comprises three things:
 
@@ -36,9 +36,11 @@ Here's the project structure:
  └── settings.gradle // Applies Gradle plugins
 ```
 
+<!-- Maybe put here the three different kinds of modules (API, implementation, client) and then tell the reader you'll learn how to create each one by creating a simple command in the Gogo shell to say hello to users when they supply their names. Show the final greeting and tell them here, you'll create the API; you'll create the implementation and the client in the next two tutorials. Then the reader sort of has a map of where he/she is going, along with a goal of learning how modules work by following the example. -Rich -->
+
 Here you'll deploy an example module and examine the module project and its build infrastructure.
 
-## Deploy an Example
+## Deploy a Simple Module
 
 The example module defines a greeting API.
 
@@ -67,7 +69,7 @@ The example module defines a greeting API.
 1. Start a [Liferay Docker container](../../installation-and-upgrades/installing-liferay/using-liferay-dxp-docker-images/dxp-docker-container-basics.md).
 
     ```bash
-    docker run -it -p 8080:8080 liferay/portal:7.3.2-ga3
+    docker run -it -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
     ```
 
 1. Deploy the module JAR.
@@ -93,7 +95,7 @@ The example module defines a greeting API.
 
 1. Open the [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md).
 
-1. In the Gogo Shell command field, use `lb` to show the module's basic information, including its ID. The most recently added module is listed last. Otherwise, if you know a keyword in the module name, you can `grep` for it.
+1. In the Gogo Shell command field, use `lb` to show the module's information, including its ID. The most recently added module appears last. If you know a keyword in the module name, you can `grep` for it.
 
     ```bash
     lb | grep -i "k8s2"
@@ -129,9 +131,9 @@ The example module defines a greeting API.
 
 The module is active and exports a package called `com.acme.k8s2`.
 
-Now that you have installed and activated the module, take a closer look at the module and its supporting infrastructure.
+Now that you have installed and activated the module, you can learn how it works. 
 
-## Walk Through the Example
+## How to Configure a Module
 
 * [Set Up the Build Infrastructure](#set-up-the-build-infrastructure)
 * [Write Code](#write-code)
