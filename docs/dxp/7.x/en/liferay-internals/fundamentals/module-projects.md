@@ -36,13 +36,25 @@ Here's the project structure:
  └── settings.gradle // Applies Gradle plugins
 ```
 
-<!-- Maybe put here the three different kinds of modules (API, implementation, client) and then tell the reader you'll learn how to create each one by creating a simple command in the Gogo shell to say hello to users when they supply their names. Show the final greeting and tell them here, you'll create the API; you'll create the implementation and the client in the next two tutorials. Then the reader sort of has a map of where he/she is going, along with a goal of learning how modules work by following the example. -Rich -->
+Liferay commonly uses three kinds of modules:
 
-Here you'll deploy an example module and examine the module project and its build infrastructure.
+1. **API modules** define interfaces.
+
+1. **Implementation Modules** provide concrete classes that implement the interfaces.
+
+1. **Client Modules** consume the APIs.
+
+You'll learn how to create each one by developing a simple command in [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md) to say hello to users when they supply their names.
+
+![Gogo shell command that greets users.](./module-projects/images/01.png)
+
+Here you'll create the API and learn the parts of a module project. You'll create the Implementation and Client modules in the next two tutorials.
+
+Start with deploying the example API module project.
 
 ## Deploy a Simple Module
 
-The example module defines a greeting API.
+The example module defines an API for generating a greeting.
 
 1. Download and unzip the example.
 
@@ -131,7 +143,7 @@ The example module defines a greeting API.
 
 The module is active and exports a package called `com.acme.k8s2`.
 
-Now that you have installed and activated the module, you can learn how it works. 
+Now that you have installed and activated the module, you can learn how it works.
 
 ## How to Configure a Module
 
@@ -151,7 +163,7 @@ Liferay modules are developed in a Gradle build infrastructure. The following Gr
 | `gradle.properties` | Specifies the Liferay product version |
 | `settings.gradle` | Applies Gradle plugins, including [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md). |
 
-You can add your own module in a subfolder, like the example module's `k8s2-api` folder, or create your module in a new [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md).
+You can add more modules in new subfolders, like the example module's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md).
 
 Here's the `k8s2-api` module structure in the context of the module root.
 
@@ -263,10 +275,12 @@ That's it! As you can see, module projects are the same as other Java projects, 
 
 Now you know what module projects look like, how to build and deploy them, and how to inspect modules at runtime.
 
-Modules leverage each other's capabilities via APIs. Liferay uses OSGi Services to define, implement, and consume APIS. Next, [APIs as OSGi Services](./apis-as-osgi-services.md) demonstrates implementing an API using OSGi services.
+Modules leverage each other's capabilities via APIs like the `Greeting` API. Liferay uses OSGi Services to define, implement, and consume APIS. Next, [APIs as OSGi Services](./apis-as-osgi-services.md) demonstrates *implementing* the `Greeting` API using OSGi services.
 
 ## Additional Information
 
+* [APIs as OSGi Services](./apis-as-osgi-services.md)
+* [Using an OSGi Service](./using-an-osgi-servce.md)
 * [Configure Dependencies](./configuring-dependencies/configuring-dependencies.md)
 * [Importing Packages](./importing-packages.md)
 * [Exporting Packages](./exporting-packages.md)
