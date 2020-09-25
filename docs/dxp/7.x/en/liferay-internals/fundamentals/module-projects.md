@@ -38,17 +38,17 @@ Here's the project structure:
 
 Liferay commonly uses three kinds of modules:
 
-1. **API modules** define interfaces.
+1. **API** modules define interfaces.
 
-1. **Implementation Modules** provide concrete classes that implement the interfaces.
+1. **Implementation** modules provide concrete classes that implement the interfaces.
 
-1. **Client Modules** consume the APIs.
+1. **Client** modules consume the APIs.
 
 You'll learn how to create each one by developing a simple command in [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md) to say hello to users when they supply their names.
 
 ![Gogo shell command that greets users.](./module-projects/images/01.png)
 
-Here you'll create the API and learn the parts of a module project. You'll create the Implementation and Client modules in the next two tutorials.
+Here you'll create the API and learn the parts of a module project. You'll create the implementation module and client module in the next two tutorials.
 
 Start with deploying the example API module project.
 
@@ -101,8 +101,7 @@ The example module defines an API for generating a greeting.
 
 1. Go to `http://localhost:8080` and sign in using the default credentials:
 
-   **User Name:** `test@liferay.com`
-
+   **User Name:** `test@liferay.com`  
    **Password:** `test`
 
 1. Open the [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md).
