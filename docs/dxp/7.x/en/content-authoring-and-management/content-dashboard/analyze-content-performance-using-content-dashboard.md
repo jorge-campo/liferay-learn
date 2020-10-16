@@ -1,4 +1,4 @@
-# Analyze Content Performance Using Content Dashboard
+# Analyze Content Performance Using the Content Dashboard
 
 In addition to... the Content Performance provides a way to analyze using the Performance Area.
 
@@ -19,3 +19,13 @@ By default, the Engament area provides the total number of Views and Reads for o
 ## Search Engine Traffic
 
 This part of the Performance sidebar provides information about the source of traffic to our content. 
+
+You can click on the sources in the graphic to access additional information about these sources, like the traffic sources by country or the best keywords.
+
+![Click on the traffic sources to access additional details](./analyze-content-performance-using-content-dashboard/images/02.png)
+
+## Related Information
+
+- [About the Content Dashboard](./about-the-content-dashboard.md)
+- [Content Dashboard Interface](./content-dashboard-interface.md)
+- [Defining Categories and Vocabularies for Content](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md)
