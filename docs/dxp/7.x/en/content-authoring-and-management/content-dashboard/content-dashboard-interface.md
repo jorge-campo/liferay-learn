@@ -1,131 +1,138 @@
 # Content Dashboard Interface
 
-The Content Dashboard parts are:
+In the Content Dashboard interface, you can find the following areas:
 
 - Content Audit Tool (1)
-- Content View area (2)
-- Information sidebar panel (3)
-- Performance sidebar panel (4)
+- Content List (2)
+- Information sidebar (3)
+- Performance sidebar (4)
 
+![The Content Dashboard user interface](./content-dashboard-interface/images/05.png)
 
+When you access the Content Dashboard page, you can see the [Content Audit Tool](#the-content-audit-tool) at the top of the page and the [Content List area](#the-content-list-area) at the button. From the Content List area, you can access the [Information](#the-information-sidebar) and [Content Performance](#the-content-performance-sidebar) sidebar panels. These panels are collapsable elements that show additional information for each item on the Content List.
 
-By default you can see the Chart area on the top and the Content View area on the button. Using the Actions Menu for each content, you can also access the Information and Performance sidebar panels.
+To access the Information or Performance sidebar, click the Actions Menu (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* or *Metrics* option. Alternatively, hover over the article and use the *Info* (![Info](../../images/icon-information.png)) or *Metrics* (![Metrics](../../images/icon-analytics.png)) buttons. From here, you can also *View* (![View](../../images/icon-preview.png)) or *Edit* (![Edit](../../images/icon-edit.png)) the content.
 
-The Information and Performance panels are collapsable elements that 
+![Access the Information and Performance sidebar from the Actions Menu or the icons on each content row](./content-dashboard-interface/images/11.png)
 
-![The Content Dashboard ](./content-dashboard-interface/images/05.png)
+```important::
+   To access the performance metrics for your content in the Performance panel, you must have an active connection with Liferay Analytics Cloud and synchronize your Liferay DXP instance. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
+```
 
-To access the performance metrics for your content in the Performance panel, you must have a connection with Liferay Analytics Cloud and the connection must be . To learn more, see ...
+## Opening the Content Dashboard
 
-By default, the Content Dashboard shows asset information from all sites and asset libraries where you have access.
-
-## Accessing the Content Dashboard
-
-1. Click on the Global Menu and, under the *Content* area, click *Content Dashboard*
-1. Alternatively, click
+1. Click on the Global Menu and, under the *Content* area, click *Content Dashboard*.
+1. If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
 
 ![Open the Content Dashboard from the Global Menu](./content-dashboard-interface/images/03.png)
 
 ## The Content Audit Tool
 
-The Content Audit Tool is the area in the top section of the Content Dashboard. Chart area is in the upper side of the Content Dashboard. The chart on this area represents the number of assets for the combination of categories in the global Vocabularies you select.
+This tool is the graphical area at the top of the Content Dashboard page. The chart on this area represents the total number of assets for the combination of categories in the global Vocabularies you select. This chart takes into account:
+
+- Web content articles exclusively, across all sites and Asset Libraries.
+- Web content you have access to.
+- The existing [filters](#filtering-and-sorting-content-in-the-content-list-area) in the Content List area.
+- A maximum of two global Vocabularies (for the x and y axis.)
+
+```tip::
+   If the Content Audit Tool doesn't show the expected chart, [verify your Categories](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md) for the default Vocabularies and ensure that [your content is categorized](../tags-and-categories/user-guide/organizing-content-with-categories-and-tags.md).
+```
 
 ![Overview of the Content Audit Tool in the Content Dashboard](./content-dashboard-interface/images/10.png)
 
-In this area, you can find:
+In the Content Audit Tool you can find:
 
 - Chart legend (1)
-- X-axis Categories for the first Vocabularies (2)
-- Y-axis Categories for the second Vocabulary (3)
-- Bar Chart (4)
+- X-axis Categories for the first global Vocabulary (2)
+- Y-axis Categories for the second global Vocabulary (3)
+- Bar chart (4)
 
 ![Open the Content Dashboard from the Global Menu](./content-dashboard-interface/images/04.png)
 
-```tip::
-   If the chart area does not show the expected graphic, verify your Categories for the default Vocabularies and ensure that your content is categorized.
-```
+### Customizing the Vocabularies and Categories in the Content Audit Tool
 
-### Customizing the Categories in the [[Graphic Area]]
+By default, the bar chart shows the total number of assets for each Category in the selected Vocabularies, but you can filter this information in different ways:
 
-By default, the bar chart shows the total number of assets for each Category in the selected Vocabularies, but you can update this information in different ways:
+- Using the filters in the [Content View Area](#the-content-view-area).
+- Hiding categories by clicking the Category name in the chart legend.
+- Change the Vocabularies.
 
-- You can filter this data using the filters in the [Content View Area](#the-content-view-area).
-- You can also remove the categories in the legend. To do so, click or unclick the category you want to filter in
-- You can change the vocabularies 
+To change the Vocabularies:
 
-To customize the Vocabularies:
-
-1. Click on the Action menu (![Actions Menu](../../images/icon-action.png)) in the Content Audit area.
-1. In the dual listbox, click the Vocabulary in the Available or *In Use* lists and click the > or < buttons to add or remove the Vocabularies you want to show.
+1. Click on the Action menu (![Actions Menu](../../images/icon-actions.png)) in the Content Audit area.
+1. In the dual listbox, click the Vocabulary in the *Available* or *In Use* lists and click the selection buttons to add or remove the Vocabularies you want to show.
+1. Click Save.
 
 ```important::
-   You can only use Vocabularies defined at the Global site level.
+   You can use a maximum of two Vocabularies defined at the Global site level.
 ```
 
-You can show a maximum of two vocabularies.
+## The Content List Area
 
-1. Click Save ?
+By default, this area shows all the content you have access to, across all sites and Asset Libraries. From here, you can sort and filter this content using built-in or custom filters. The Content Audit Tool chart changes dynamically based on the filters that you set.
 
-## The Content View Area
-
-The Content View . The Audit Chart area changes dynamically when you apply one or more filters in the Content View.
-
-In this are of the Content Dashboard we can find:
+In the Content List area you can find:
 
 - Filter and Sort selector (1)
 - Filter editor (2)
 - Search field (3)
 - Content list (4)
 
-![Open the Content Dashboard from the Global Menu](./content-dashboard-interface/images/06.png)
+![Elements of the Content List area](./content-dashboard-interface/images/06.png)
+
+In the content list you can find the following information:
 
 | Column | Description |
 | --- | --- |
-| Title | cell 2 |
-| Author | cell 2 |
-| Subtype | Shows the [Category Subtype]() |
-| Site or Asset Library | cell 2 |
-| Status | cell 2 |
-| Audience | Shows one of more Categories from the Audience Vocabulary |
-| Topic | Shows one of more Categories from the Topic Vocabulary |
-| Modified DAte | Last modified date or time |
+| Title | Article title. When the article is based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md), you can see a page icon next to the title. |
+| Author | Author's name. |
+| Subtype | Shows the [Subcategory](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md#creating-subcategories) |
+| Site or Asset Library | Article location in the Liferay DXP instance. |
+| Status | Article workflow status. |
+| Audience | Shows one of more Categories from the Audience Vocabulary. |
+| Topic | Shows one of more Categories from the Topic Vocabulary. |
+| Modified DAte | Last modified date or time. |
 
+For articles based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) (denoted by the Page (![Page](../../images/icon-page.png)) icon), you can access additional metadata in the [Information sidebar](#information-sidebar).
 
-### Sorting and Filtering Content in the [[Content View Area]]
-
-By default, the bar chart shows the total number of assets for each Category. You can filter this data using the filters in the [[Content View Area]].
+### Filtering and Sorting Content in the Content List Area
 
 To filter the content:
 
-1. Click the Filter and Order drop-down menu.
-1. Click on one of the predefined filters or click of a custom filter (denoted by the three dots) to create your own filtering.
+1. Click the *Filter and Order* drop-down menu.
+1. Click on one of the predefined filters or click on a custom filter (denoted by three dots) to create your own filter criteria.
 1. Select the content you want to filter by.
 
-When you click in a custom filter (denoted by the three dots (...)), you can configure the . For example, if you click in the The filter editor area shows your filters and the total number of results. To remove one or more filters, click the close button next to the filter's name, or click the Clear button to remove all the filters and see all the available content.
+The filter editor area shows your filters and the total number of results. To remove one or more filters, click the *Close* (![Close](../../images/icon-times.png)) button next to the filter's name, or click the *Clear* button to remove all the filters and reset the list.
 
-![Remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/01.png)
+![Use the filter editor to remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/01.png)
 
-In addition to the predefined and custom filters, you can search and filter the assets in the Content View are using keywords in the search field.
+In addition to the predefined and custom filters, you can search and filter the assets in the Content View using keywords in the search field.
 
 To sort the content:
 
-1. Click the Filter and Order drop-down menu.
+1. Click the *Filter and Order* drop-down menu.
 1. Under the *Order By* section, select the order for the items.
 
-## The Information Sidebar Panel
+## The Information Sidebar
 
 This panel provides access to multiple information for the asset selected, including the asset owner, available languages for the content, tags and categories for the asset, or review date, among others.
 
-![Remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/07.png)
+```note::
+   You can opne the Information Sidebar for assets with a Content Display Page associated. You can identify these assets in the Content List area by the 
+```
+
+![Access the Information Sidebar from any assets in the Content List area](./content-dashboard-interface/images/07.png)
 
 To open the Information sidebar panel:
 
 1. Click the Actions Menu next to the asset and choose *Info*.
 1. Alternatively, hover over the asset and click the *Information* (![Information icon](../../images/icon-information.png)) icon.
 
-![Remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/09.png)
+![The Information sidebar provides different information for your content](./content-dashboard-interface/images/09.png)
 
-## The [[Content Performance Area]]
+## The Content Performance Sidebar
 
 ![Remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/08.png)
 
@@ -136,6 +143,16 @@ To open the Performance sidebar panel:
 
 1. Click the ActionMenu next to the asset and choose
 1. Alternatively hover 
+a
+To access the Content Performance information, the Liferay DXP instance must be connected to Liferay Analytics Cloud, and configured with to synchronize information with your instance. If the *Performance* entry in the Actions Menu, or if the Analytics (![Analytics](../../images/icon-analytics.png)) icon is not available when you hover over the entry, To enable the Content Performance sidebar panel and access to the a, connect and synchronize your instance with 
+
+If the Performacne option
+
+![Connect you Liferay DXP instance to Analytics Cloud to enable the performance metrics](./content-dashboard-interface/images/13.png)
+
+```note::
+   You can access the Content Perforamcne metrics for web content using a Display Page Teamplate and when your Liferay DXP instance is connected to Liferay Analytics Cloud.
+```
 
 The Content Performance info panel provides access to the following article's information:
 
