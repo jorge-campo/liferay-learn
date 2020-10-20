@@ -9,14 +9,14 @@ In the Content Dashboard interface, you can find the following areas:
 
 ![The Content Dashboard user interface](./content-dashboard-interface/images/05.png)
 
-When you access the Content Dashboard page, you can see the [Content Audit Tool](#the-content-audit-tool) at the top of the page and the [Content List area](#the-content-list-area) at the button. From the Content List area, you can access the [Information](#the-information-sidebar) and [Content Performance](#the-content-performance-sidebar) sidebar panels. These panels are collapsable elements that show additional information for each item on the Content List.
+When you access the Content Dashboard page, you can see the [Content Audit Tool](#the-content-audit-tool) at the top of the page and the [Content List area](#the-content-list-area) at the button. From the Content List area, you can access the [Information](#the-information-sidebar) and [Content Performance](#the-content-performance-sidebar) sidebar panels. These panels are collapsable elements that show additional information for each item in the Content List.
 
 To access the Information or Performance sidebar, click the Actions Menu (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* or *Metrics* option. Alternatively, hover over the article and use the *Info* (![Info](../../images/icon-information.png)) or *Metrics* (![Metrics](../../images/icon-analytics.png)) buttons. From here, you can also *View* (![View](../../images/icon-preview.png)) or *Edit* (![Edit](../../images/icon-edit.png)) the content.
 
 ![Access the Information and Performance sidebar from the Actions Menu or the icons on each content row](./content-dashboard-interface/images/11.png)
 
 ```important::
-   To access the performance metrics for your content in the Performance panel, you must have an active connection with Liferay Analytics Cloud and synchronize your Liferay DXP instance. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
+   To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
 ```
 
 ## Opening the Content Dashboard
@@ -35,11 +35,11 @@ This tool is the graphical area at the top of the Content Dashboard page. The ch
 - The existing [filters](#filtering-and-sorting-content-in-the-content-list-area) in the Content List area.
 - A maximum of two global Vocabularies (for the x and y axis.)
 
-```tip::
-   If the Content Audit Tool doesn't show the expected chart, [verify your Categories](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md) for the default Vocabularies and ensure that [your content is categorized](../tags-and-categories/user-guide/organizing-content-with-categories-and-tags.md).
-```
-
 ![Overview of the Content Audit Tool in the Content Dashboard](./content-dashboard-interface/images/10.png)
+
+```tip::
+   If the Content Audit Tool doesn't show the expected chart, [verify your Categories](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md) for the global Vocabularies and ensure that [your content is categorized](../tags-and-categories/user-guide/organizing-content-with-categories-and-tags.md).
+```
 
 In the Content Audit Tool you can find:
 
@@ -55,8 +55,8 @@ In the Content Audit Tool you can find:
 By default, the bar chart shows the total number of assets for each Category in the selected Vocabularies, but you can filter this information in different ways:
 
 - Using the filters in the [Content View Area](#the-content-view-area).
-- Hiding categories by clicking the Category name in the chart legend.
-- Change the Vocabularies.
+- Hiding categories, by clicking the Category name in the chart legend.
+- Changing the Vocabularies.
 
 To change the Vocabularies:
 
@@ -81,13 +81,13 @@ In the Content List area you can find:
 
 ![Elements of the Content List area](./content-dashboard-interface/images/06.png)
 
-In the content list you can find the following information:
+In the list of contents, you can find the following columns:
 
 | Column | Description |
 | --- | --- |
 | Title | Article title. When the article is based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md), you can see a page icon next to the title. |
 | Author | Author's name. |
-| Subtype | Shows the [Subcategory](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md#creating-subcategories) |
+| Subtype | Article's [Subcategory](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md#creating-subcategories) |
 | Site or Asset Library | Article location in the Liferay DXP instance. |
 | Status | Article workflow status. |
 | Audience | Shows one of more Categories from the Audience Vocabulary. |
@@ -104,7 +104,7 @@ To filter the content:
 1. Click on one of the predefined filters or click on a custom filter (denoted by three dots) to create your own filter criteria.
 1. Select the content you want to filter by.
 
-The filter editor area shows your filters and the total number of results. To remove one or more filters, click the *Close* (![Close](../../images/icon-times.png)) button next to the filter's name, or click the *Clear* button to remove all the filters and reset the list.
+The Filter Editor area shows your filters and the total number of results. To remove one or more filters, click the *Close* (![Close](../../images/icon-times.png)) button next to the filter's name, or click the *Clear* button to remove all the filters and reset the Content List.
 
 ![Use the filter editor to remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/01.png)
 
@@ -117,50 +117,43 @@ To sort the content:
 
 ## The Information Sidebar
 
-This panel provides access to multiple information for the asset selected, including the asset owner, available languages for the content, tags and categories for the asset, or review date, among others.
+This sidebar provides access to different metadata for the asset selected, including the asset owner, available languages for the content, tags and categories for the asset, or review date, among others.
+
+![Access the Information sidebar from the assets in the Content List area](./content-dashboard-interface/images/07.png)
 
 ```note::
-   You can opne the Information Sidebar for assets with a Content Display Page associated. You can identify these assets in the Content List area by the 
+   You can open the Information Sidebar for assets with a Content Display Page associated. You can identify these assets in the Content List area by the Page icon.
 ```
-
-![Access the Information Sidebar from any assets in the Content List area](./content-dashboard-interface/images/07.png)
 
 To open the Information sidebar panel:
 
 1. Click the Actions Menu next to the asset and choose *Info*.
 1. Alternatively, hover over the asset and click the *Information* (![Information icon](../../images/icon-information.png)) icon.
 
-![The Information sidebar provides different information for your content](./content-dashboard-interface/images/09.png)
+    ![The Information sidebar provides different information for your content](./content-dashboard-interface/images/09.png)
 
 ## The Content Performance Sidebar
 
-![Remove a specific filter or all of them from the filter area](./content-dashboard-interface/images/08.png)
+This sidebar gathers statistics for your content, like the number of reads and views or the sources of traffic.
 
+![Access the Performance sidebar from the assets in the Content List area](./content-dashboard-interface/images/08.png)
 
 You can access the Content Performance info panel for any of the assets in the Content area.
 
 To open the Performance sidebar panel:
 
-1. Click the ActionMenu next to the asset and choose
-1. Alternatively hover 
-a
-To access the Content Performance information, the Liferay DXP instance must be connected to Liferay Analytics Cloud, and configured with to synchronize information with your instance. If the *Performance* entry in the Actions Menu, or if the Analytics (![Analytics](../../images/icon-analytics.png)) icon is not available when you hover over the entry, To enable the Content Performance sidebar panel and access to the a, connect and synchronize your instance with 
+1. Click the Actions Menu next to the asset and choose *Performance*.
+1. Alternatively, hover over the asset and click the *Metrics* (![Metrics](../../images/icon-analytics.png)) button.
 
-If the Performacne option
+To access the Content Performance metrics, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content If the *Performance* entry in the Actions Menu, or if the *Metrics* (![Analytics](../../images/icon-analytics.png)) icon is not available when you hover over the entry, To enable the Content Performance sidebar panel and access to the a, connect and synchronize your instance with 
+
+If the Performance option
 
 ![Connect you Liferay DXP instance to Analytics Cloud to enable the performance metrics](./content-dashboard-interface/images/13.png)
 
 ```note::
    You can access the Content Perforamcne metrics for web content using a Display Page Teamplate and when your Liferay DXP instance is connected to Liferay Analytics Cloud.
 ```
-
-The Content Performance info panel provides access to the following article's information:
-
-- General information
-- Engagement
-- Search Engines Traffic
-
-The General Information section contains different information for your articles, like article name, URL, publication date, author, and languages the article is translated into.
 
 To learn how to analyze your content performance using the Performance area, see [Analyze Content Performance Using the Content Dashboard](./analyze-content-performance-using-content-dashboard.md).
 
