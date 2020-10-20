@@ -1,6 +1,6 @@
 # Analyze Content Performance Using the Content Dashboard
 
-You can use the Content Performance sidebar in the Content Dashboard page to analyze different information about your content, like the number of reads and views for your content, sources of traffic, or keywords driving this traffic to your site. Using the Content Performance panel, content teams can periodically assess the content strategy execution and adapt this strategy base on quantitative data.
+You can use the Content Performance sidebar in the Content Dashboard page to analyze different information about your content, like the number of reads and views, traffic sources, or keywords driving an audience to your site. Using the Content Performance panel, content teams can periodically assess the content strategy execution and adapt this strategy base on quantitative data.
 
 ![Open the Content Dashboard from the Global Menu](./analyze-content-performance-using-content-dashboard/images/01.png)
 
@@ -11,6 +11,13 @@ To open the Performance sidebar panel:
 
 ```important::
    To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
+```
+
+```important::
+   To access the metrics for your content in the Performance panel, you must:
+
+    - Have the the view and edit permission for Web Content. See 
+    - Connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
 ```
 
 When your content is localized in different languages, you can select the language in the *Languages Translated Into* section to show only the statistics for that language. To do so, click on the language icon drop-down menu and select the language.
