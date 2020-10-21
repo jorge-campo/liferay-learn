@@ -1,29 +1,30 @@
 # Analyze Content Performance Using the Content Dashboard
 
-You can use the Content Performance sidebar in the Content Dashboard page to analyze different information about your content, like the number of reads and views, traffic sources, or keywords driving an audience to your site. Using the Content Performance panel, content teams can periodically assess the content strategy execution and adapt this strategy base on quantitative data.
+> Available: Liferay 7.3+.
 
-![Open the Content Dashboard from the Global Menu](./analyze-content-performance-using-content-dashboard/images/01.png)
+You can use the Content Performance tool in the [Content Dashboard](./about-the-content-dashboard.md) to analyze metrics about your content, like the number of reads and views, traffic sources, or keywords driving people to your site. Using the Content Performance sidebar, content teams can periodically assess the content strategy execution and adapt this strategy based on quantitative data.
 
-To open the Performance sidebar panel:
+![The Content Performance sidebar is part of the Content Dashboard interface](./analyze-content-performance-using-content-dashboard/images/01.png)
 
-1. Click the Actions Menu next to the asset and choose *Performance*.
-1. Alternatively, hover over the asset and click the *Metrics* (![Metrics](../../images/icon-analytics.png)) button.
+To access the Content Performance, the following condition should be met:
 
-```important::
-   To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
-```
+- You have View and Edit permissions for the web content.
+- The content is based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) (denoted by the *Page* (![Page](../../images/icon-page.png)) icon).
+- The Liferay DXP instance has an active [connection to Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) and your content is synchronized.
 
-```important::
-   To access the metrics for your content in the Performance panel, you must:
+To open the Content Performance sidebar:
 
-    - Have the the view and edit permission for Web Content. See 
-    - Connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
-```
+1. Click the *Actions* menu (![Actions Menu](../../images/icon-actions.png)) next to the web content you want to review and select *Metrics*.
+1. Alternatively, hover over the content and click the *Metrics* (![Metrics](../../images/icon-analytics.png)) button.
 
-When your content is localized in different languages, you can select the language in the *Languages Translated Into* section to show only the statistics for that language. To do so, click on the language icon drop-down menu and select the language.
+You can also access the performance metrics outside of the Content Dashboard. The *Metrics* button is available in view mode for web content when you have permission to edit the web content layout.
+
+![Access the Content Performance metrics from the Analytics button](./analyze-content-performance-using-content-dashboard/images/08.png)
+
+When your content is localized in different languages, you can view metrics for each language in the *Languages Translated Into* section. To do so, click on the language icon selector and select the language.
 
 ```note::
-   The language selector is not available for non-localized content.
+   The language selector is only available for localized content.
 ```
 
 ![Select the language ](./analyze-content-performance-using-content-dashboard/images/03.png)
@@ -35,39 +36,41 @@ The Content Performance sidebar contains two different areas:
 
 ## Engagement
 
-This area shows the number of Views and Reads of your content, and how these numbers change over time. Views and Reads are two key values to understand the performance of your content. A visitor accessing one particular content (a viewer) may or may not read the content. To distinguish the audience that only visit the content (number of Views) from the audience engaging with the content (number of Reads), Liferay uses a specialized algorithm that considers parameters like article length, article language, or scroll behavior, among others.
+This area shows the number of Views and Reads of your content, and how these metrics change over time. Views and Reads are two key values to understand your content performance and discover content insights. A visitor accessing one particular content may or may not read this content. To distinguish the audience that only visit the content (number of Views) from the audience engaging with the content (number of Reads), Liferay uses a specialized algorithm that considers parameters like article length, language, or scroll behavior, among others.
 
 ![The Engagement area in the Content Performance sidebar provides Reads and View information](./analyze-content-performance-using-content-dashboard/images/06.png)
 
-By default, the Engagement area shows the total number of Views and Reads in the last seven days. You can change this period in the drop-down menu, and move back and forward using the arrow buttons (![Arrow left](../../images/icon-angle-left.png) ![Arrow right](../../images/icon-angle-right.png)) to analyze engagement trends over time.
+By default, the Engagement area shows the total number of Views and Reads in the last seven days. You can change this period in the drop-down time selector, and analyze trends over the time using the backward and forward buttons (![Arrow left](../../images/icon-angle-left.png) ![Arrow right](../../images/icon-angle-right.png)). Hover over any part of the line chart to show the Views and Reads for a specific time.
 
-You can hover over any point of the 
+```note::
+   If the line chart for the Engagement area does not show values for a certain period, it means that the information could not be collected or analyzed for that period.
+```
 
-If the line chart for the Engagement area does not show values for a certain period, it means that the information could not be collected or analyzed for that time.
-
-![A broken line chart denotes a period where the data is not available](./analyze-content-performance-using-content-dashboard/images/06.png)
+![A broken line chart denotes a period where the data is not available](./analyze-content-performance-using-content-dashboard/images/04.png)
 
 ## Search Engine Traffic
 
-This part of the Performance sidebar provides information about the sources driving people to your content. Sources can be:
+This part of the Content Performance sidebar provides information about the sources driving web traffic to your content. The sources can be:
 
-- Organic --- People finding the content through a search engine.
-- Paid --- People finding the content through paid keywords.
+- **Organic** --- People finding the content through a search engine.
+- **Paid** --- People finding the content through paid keywords.
 
-![The Engagement area in the Content Performance sidebar provides Reads and View information](./analyze-content-performance-using-content-dashboard/images/07.png)
+    ![The Engagement area in the Content Performance sidebar provides Reads and View information](./analyze-content-performance-using-content-dashboard/images/07.png)
 
-You can click on the sources in the graphic to access additional information about these sources, like the traffic sources by country or the best keywords.
+You can click the sources in the graphic (1) to access additional metrics about these sources (2), or filter the information by country. The following table describes these metrics:
+
+| Label | Description |
+| --- | --- |
+| Traffic Volume | The estimated number of visitors to your page. |
+| Traffic Share | Percentage of traffic you content receives from the traffic source. |
+| Best Keyword | Top five keywords driving traffic through organic search |
+| Best Paid Keyword |Top five keywords driving traffic through paid search. |
 
 ```note::
    Keywords are one or more words that people use to find content.
 ```
 
 ![Click on the traffic sources to access additional details](./analyze-content-performance-using-content-dashboard/images/02.png)
-
-- **Traffic Volume** --- The estimated number of visitors to your page.
-- **Traffic Share** --- Percentage of traffic you content receives from the traffic source.
-- **Best Keyword** --- Top five keywords driving traffic through organic search.
-- **Best Paid Keyword** --- Top five keywords driving traffic through paid search.
 
 ## Related Information
 

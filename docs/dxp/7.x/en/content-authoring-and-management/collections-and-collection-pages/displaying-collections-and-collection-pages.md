@@ -101,7 +101,7 @@ To display the Content Sets, start with a blank page, and then add the necessary
 1. Create a new *Home* page for your site as a Widget Page with a 1 column layout. If you're using a fresh Liferay DXP bundle, you can just remove the *Hello World* widget from the sample *Home* page.
 2. Open the *Add* menu and add two *Content Management* &rarr; *Asset Publishers* to the page stacked vertically.
 3. Click ![Options](../../images/icon-app-options.png) &rarr; *Configuration* for the top Asset Publisher.
-4. Under *Asset Selection* choose *Content Set*.
+4. Under *Asset Selection* select *Content Set*.
 
     ![The Asset Publisher has a number of options available for selecting its source for content.](./displaying-collections-and-collection-pages/images/20.png)
 
@@ -114,7 +114,7 @@ Now the images will appear at the top of the page. You can manage the way the co
 Now configure the bottom Asset Publisher with the other Content Set.
 
 1. Click ![Options](../../images/icon-app-options.png) &rarr; *Configuration* for the bottom Asset Publisher.
-2. Under *Asset Selection* choose *Content Set*.
+2. Under *Asset Selection* select *Content Set*.
 3. Open *Select Content Set* and click *Select*.
 4. Click on the *Trending* Content Set.
 
