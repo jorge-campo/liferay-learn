@@ -102,7 +102,7 @@ The *Contents* panel provides a list of the web content on the page. This includ
 
 ## Page Design Options
 
-Click the *Look and Feel* icon (![Look and Feel](../../../images/icon-look-and-feel.png)) to change the theme or manage other options for the page. These options are further explored in [Configuring Individual Pages](../page-settings/configuring-individual-pages.md#look-and-feel).
+Click the *Page Design Options* icon (![Look and Feel](../../../images/icon-look-and-feel.png)) to change the theme or manage other options for the page. These options are further explored in [Page Configuration UI Reference](../page-settings/page-configuration-ui-reference.md#look-and-feel).
 
 ## Comments
 
