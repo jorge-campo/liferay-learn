@@ -4,6 +4,50 @@
    Liferay DXP 7.3+. For previous Liferay DXP versions, see `Liferay DXP 7.1 and 7.2 <#liferay-dxp-7-1-and-7-2>`_.
 ```
 
+## Editing Options in Content Pages
+
+The Liferay DXP Page Editor includes different edit-aiding options.
+
+### Page Editing Modes
+
+When you open Page Editor, you can edit your content in two ways:
+
+- *Page Design*: This mode is available when you have permission to update the page and the page content.
+- *Content Edition*: This mode is available when you have permission to update the page but not the page content.
+
+    ![Choose between Page Design or Content Edition editing modes.](building-content-pages/images/18.png)
+
+The editing options available in the Content Page sidebar depend on the editing mode you choose.
+
+### Undo, Redo, and Page Edit History
+
+1. You can revert any action using the *Undo* (![Preview](../../../images/icon-undo.png)) or *Redo* (![Preview](../../../images/icon-redo.png)) buttons, or you can return to a previous version of your edits using the *History* (![Preview](../../../images/icon-time.png)) button.
+
+    ![Revert your changes using the Undo, Redo, and History buttons.](./building-content-pages/images/17.png)
+
+1. To preview your Content Page, click the *Preview* button (![Preview](../../../images/icon-preview.png)).
+
+### Screen Layout Controls
+
+You can also use the screen layout controls to target a specific screen layout. For example, if you want to optimize the page layout for phones, you can select the option to edit and preview the content using a phone screen layout. These layout controls are:
+
+- Desktop
+- Tablet
+- Landscape Phone
+- Portrait Phone
+
+![Select the design option for different screen layouts](building-content-pages/images/14.png)
+
+```note::
+   The Fragments and Widgets and Page Design options in the Content Page sidebar are only available in the Desktop layout.
+```
+
+In the Tablet and Phone layouts, you can further adjust the size of the screen using the resize handlebar.
+
+![Resize the content preview in the Tablet or Phone layouts](building-content-pages/images/15.gif)
+
+## Adding Elements to Content Pages
+
 Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), you can build it by adding and configuring various [Content Page elements](./content-pages-overview.md).
 
 1. Under the Site Menu, go to *Site Builder* &rarr; *Pages*.
@@ -19,15 +63,6 @@ Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), 
 1. Alternatively, click the Actions Menu (![Actions](../../../images/icon-actions.png)) of an existing Content Page and select *Edit*.
 
     ![Edit an existing Content Page by dropping Fragments or Widgets in the edit area.](building-content-pages/images/02.png)
-
-    When you enter the Site Builder view, you can add or edit your content in two ways:
-
-    - *Page Design*: If you have permission to update the page and the page content, this mode is available.
-    - *Content Edition*: If you only have permission to update the page but not the page content, you can use this mode.
-
-    The editing options available in the Content Page sidebar depend on the editing mode you choose.
-
-    ![Choose between Page Design or Content Edition editing modes.](building-content-pages/images/18.png)
 
 1. From the Content Page sidebar, select the *Fragments and Widgets* button (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the Fragments and Widgets for your content.
 
@@ -54,11 +89,6 @@ Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), 
        In progress work on a Content Page is automatically saved.
     ```
 
-1. You can revert any action using the *Undo* (![Preview](../../../images/icon-undo.png)) or *Redo* (![Preview](../../../images/icon-redo.png)) buttons, or you can return to a previous version of your edits using the *History* (![Preview](../../../images/icon-time.png)) button.
-
-    ![Revert your changes using the Undo, Redo, and History buttons.](./building-content-pages/images/17.png)
-
-1. To preview your Content Page, click the *Preview* button (![Preview](../../../images/icon-preview.png)).
 1. Click the *Publish* button in the top right to make the updates available to the live page.
 
 ## Configuring Elements on a Content Page
