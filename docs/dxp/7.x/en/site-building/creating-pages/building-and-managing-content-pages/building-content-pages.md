@@ -78,7 +78,7 @@ Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), 
     * [Editing Text Inline](#editing-text-inline)
     * [Editing Hyperlinks](#editing-hyperlinks)
     * [Editing Images](#editing-images)
-    * [Configuring the Grid Layout](#configuring-the-grid-layout)
+    * [Configuring the Grid Fragment](#configuring-the-grid-fragment)
     * [Copying a Fragment](#copying-a-fragment)
     * [Saving a Fragment Composition](#saving-a-fragment-composition)
     * [Mapping Content](#mapping-content)
@@ -164,9 +164,9 @@ You can set different style options for your Content Page layout like background
 
 You can also specify a background image for a layout by [setting the layout style](#setting-the-layout-style) or provide a link for your image by [editing hyperlinks](#editing-hyperlinks).
 
-### Configuring the Grid Layout
+### Configuring the Grid Fragment
 
-1. Click the Grid element you want to configure.
+1. Click the Grid fragment you want to configure.
 1. In the Content Page sidebar, under the *Styles* tab, select the style options for your content.
 1. Under the *Configuration* tab, select the *Number of Modules* (from 1 to 6) to specify the number of columns for the grid.
 1. Click *Show Gutter* to show the spacing between modules.
@@ -233,7 +233,7 @@ You can also map these elements to existing content. You can set the *Content* f
 
 To map your elements to existing content,
 
-1. Click the Grid element you want to map.
+1. Click the Page element you want to map.
 1. In the Content Page sidebar, under the *Mapping* tab, click the *Add* button (![Map](../../../images/icon-plus.png)).
 1. Select the content you want to map to your Content Page element.
 1. Select the *Field* of your content that you want to map.
