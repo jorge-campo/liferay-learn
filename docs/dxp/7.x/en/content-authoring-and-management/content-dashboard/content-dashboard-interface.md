@@ -16,7 +16,7 @@ When you [open the Content Dashboard](#opening-the-content-dashboard) page, you 
 To access the Information or Performance sidebar, click the Actions Menu (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* or *Metrics* option. Alternatively, hover over the article and use the *Info* (![Info](../../images/icon-information.png)) or *Metrics* (![Metrics](../../images/icon-analytics.png)) buttons.
 
 ```important::
-   To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html).
+   To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](../../../../../../analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md).
 ```
 
 ## Opening the Content Dashboard
@@ -31,9 +31,9 @@ To access the Information or Performance sidebar, click the Actions Menu (![Acti
 This tool is the graphical area at the top of the Content Dashboard page. The chart on this area represents the total number of assets for the combination of categories in the global Vocabularies you select. This chart takes into account:
 
 - Web content articles exclusively, across all Sites and Asset Libraries.
-- Web content you have access to.
+- Content you have access to.
 - The existing [filters](#filtering-and-sorting-content-in-the-contents-list) in the [Contents list](#contents-list).
-- A maximum of two global Vocabularies (for the *x* and *y* axis.)
+- A maximum of two global Vocabularies (for the *x* and *y* axes.)
 
 ![Overview of the Content Audit Tool in the Content Dashboard](./content-dashboard-interface/images/10.png)
 
@@ -95,22 +95,25 @@ In the list of contents, you can find the following columns:
 | Status | Article workflow status. Articles with more than one version in different statuses show all than statuses. |
 | *First Vocabulary* | This is the first Vocabulary in the Content Audit Tool. |
 | *Second Vocabulary* | The optional second Vocabulary in the Content Audit Tool. |
-| Topic | Shows one of more Categories from the Topic Vocabulary. |
 | Modified Date | Date or time of the last article update. |
 
 (*) The *Page* (![Page](../../images/icon-page.png)) icon denotes articles based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md).
 
-For each entry in the Contents list, you can access the following options using the Actions Menu (![Actions Menu](../../images/icon-actions.png)) or hovering over the article and clicking the corresponding option:
+```note::
+   The *First Vocabulary* and *Second Vocabulary* columns depend on the Vocabularies you select.
+```
+
+For each entry in the Contents list, you can access the following options using the *Actions* menu (![Actions Menu](../../images/icon-actions.png)) or hovering over the article and clicking the corresponding option:
 
 - *View* (![View](../../images/icon-preview.png)): Opens the Display Page in view mode.
-- *Edit* (![Edit](../../images/icon-edit.png)): Opens the Display Page in edit mode.
+- *Edit* (![Edit](../../images/icon-edit.png)): Opens the content in edit mode.
 - *Info* (![Information](../../images/icon-information.png)): Opens the [Information sidebar](#information-sidebar).
-- *Metrics* (![Edit](../../images/icon-analytics.png)): Opens the [Content Performance sidebar](#the-content-performance-sidebar).
+- *View Metrics* (![View Metrics](../../images/icon-analytics.png)): Opens the [Content Performance sidebar](#the-content-performance-sidebar).
 
     ![Access the Information and Performance sidebar from the Actions menu or the icons on each content row](./content-dashboard-interface/images/11.png)
 
 ```note::
-   You can use the *View*, *Information*, and *Metrics* options for content based on a Display Page Template. You can use the *Edit* option when you have Edit permission for the content.
+   You can use the *View*, *Info*, and *Metrics* options for content based on a Display Page Template. You can use the *Edit* option when you have Edit permission for the content.
 ```
 
 ### Filtering and Sorting Content in the Contents List
@@ -147,21 +150,21 @@ This sidebar provides access to different metadata for the asset selected in the
 To open the Information sidebar panel:
 
 1. Click the Actions Menu (![Actions Menu](../../images/icon-actions.png)) next to the asset and select *Info*.
-1. Alternatively, hover over the asset and click the *Information* (![Information icon](../../images/icon-information.png)) icon.
+1. Alternatively, hover over the asset and click the *Info* (![Information icon](../../images/icon-information.png)) icon.
 
     ![The Information sidebar provides different metadata for your content](./content-dashboard-interface/images/09.png)
 
 ## Content Performance Sidebar
 
-This sidebar shows statistics for your content, like the number of reads and views or the web traffic sources.
+This sidebar shows statistics for your content, like the number of reads and views or the web traffic channels.
 
 ![Access the Performance sidebar from the assets in the Contents list](./content-dashboard-interface/images/08.png)
 
 You can access the Content Performance sidebar for assets in the Contents list when the following conditions are met:
 
-- You have View and Edit permissions for the web content.
+- You have View and Edit permissions for the content.
 - The content is based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) (denoted by the *Page* (![Page](../../images/icon-page.png)) icon).
-- The Liferay DXP instance has an active [connection to Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) and your content is synchronized.
+- The Liferay DXP instance has an active [connection to Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) and your site is synchronized.
 
 ```note::
    The *Metrics* option for your content is available when these conditions are met (2). If the *Metrics* options is missing, one or more conditions are not met (1).
@@ -172,12 +175,12 @@ You can access the Content Performance sidebar for assets in the Contents list w
 To open the Performance sidebar panel:
 
 1. Click the Actions menu (![Actions Menu](../../images/icon-actions.png)) next to the asset and select *Metrics*.
-1. Alternatively, hover over the asset and click the *Metrics* (![Metrics](../../images/icon-analytics.png)) button.
+1. Alternatively, hover over the asset and click the *Metrics* (![Metrics](../../images/icon-analytics.png)) icon.
 
-To learn how to analyze your content performance using the Performance area, see [Analyze Content Performance Using the Content Dashboard](./analyze-content-performance-using-content-dashboard.md).
+To learn how to analyze your content performance using the Performance area, see [Analyze Content Metrics Using the Content Performance](./analyze-content-metrics-using-content-performance-tool.md).
 
 ## Related Information
 
 - [About the Content Dashboard](./about-the-content-dashboard.md)
-- [Analyze Content Performance Using the Content Dashboard](./analyze-content-performance-using-content-dashboard.md)
+- [Analyze Content Metrics Using the Content Performance Tool](./analyze-content-metrics-using-content-performance-tool.md)
 - [Defining Categories and Vocabularies for Content](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md)
