@@ -13,7 +13,7 @@ In the Content Dashboard interface, you can find the following areas:
 
 When you [open the Content Dashboard](#opening-the-content-dashboard) page, you can see the [Content Audit Tool](#content-audit-tool) at the top of the page and the [Contents list](#contents-list) at the button. From the Contents list, you can access the [Information](#information-sidebar) and [Content Performance](#content-performance-sidebar) sidebars. These sidebars are collapsable elements that show additional information for each item in the Contents List.
 
-To access the Information or Performance sidebar, click the Actions Menu (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* or *Metrics* option. Alternatively, hover over the article and use the *Info* (![Info](../../images/icon-information.png)) or *Metrics* (![Metrics](../../images/icon-analytics.png)) buttons.
+To access the Information or Performance sidebar, click the Actions Menu (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* or *View Metrics* option. Alternatively, hover over the article and click the *Info* (![Info](../../images/icon-information.png)) or *View Metrics* (![Metrics](../../images/icon-analytics.png)) icons.
 
 ```important::
    To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your site. To learn more, see `Connecting Liferay DXP to Analytics Cloud <../../../../../../analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md>`__.
@@ -38,7 +38,7 @@ This tool is the graphical area at the top of the Content Dashboard page. The ch
 ![Overview of the Content Audit Tool in the Content Dashboard](./content-dashboard-interface/images/10.png)
 
 ```tip::
-   If the Content Audit Tool doesn't show the expected chart, [verify your Categories](../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md) for the global Vocabularies and ensure that [your content is categorized](../tags-and-categories/user-guide/organizing-content-with-categories-and-tags.md).
+   If the Content Audit Tool doesn't show the expected chart, `verify your Categories <../tags-and-categories/user-guide/defining-categories-and-vocabularies-for-content.md>`__ for the global Vocabularies and ensure that `your content is categorized <../tags-and-categories/user-guide/organizing-content-with-categories-and-tags.md>`__.
 ```
 
 In the Content Audit Tool interface you can find:
@@ -110,7 +110,7 @@ For each entry in the Contents list, you can access the following options using 
 - *Info* (![Information](../../images/icon-information.png)): Opens the [Information sidebar](#information-sidebar).
 - *View Metrics* (![View Metrics](../../images/icon-analytics.png)): Opens the [Content Performance sidebar](#the-content-performance-sidebar).
 
-    ![Access the Information and Performance sidebar from the Actions menu or the icons on each content row](./content-dashboard-interface/images/11.png)
+    ![Access the Information and Performance sidebars from the Actions menu or the icons on each content row](./content-dashboard-interface/images/11.png)
 
 ```note::
    You can use the *View*, *Info*, and *Metrics* options for content based on a Display Page Template. You can use the *Edit* option when you have Edit permission for the content.
@@ -174,8 +174,8 @@ You can access the Content Performance sidebar for assets in the Contents list w
 
 To open the Performance sidebar panel:
 
-1. Click the Actions menu (![Actions Menu](../../images/icon-actions.png)) next to the asset and select *Metrics*.
-1. Alternatively, hover over the asset and click the *Metrics* (![Metrics](../../images/icon-analytics.png)) icon.
+1. Click the Actions menu (![Actions Menu](../../images/icon-actions.png)) next to the asset and select *View Metrics*.
+1. Alternatively, hover over the asset and click the *View Metrics* (![Metrics](../../images/icon-analytics.png)) icon.
 
 To learn how to analyze your content performance using the Performance area, see [Analyze Content Metrics Using the Content Performance](./analyze-content-metrics-using-content-performance-tool.md).
 

@@ -19,7 +19,7 @@ To open the Content Performance sidebar:
 
 You can also access the performance metrics outside of the Content Dashboard. The *View Metrics* button is available in view mode for web content when you have permission to edit the web content layout.
 
-![Access the Content Performance metrics from the Analytics button](./analyze-content-metrics-using-content-performance-tool/images/08.png)
+![Access the Content Performance metrics from the View Metrics button](./analyze-content-metrics-using-content-performance-tool/images/08.png)
 
 When your content is localized in different languages, you can view metrics for each language in the *Languages Translated Into* section. To do so, click on the language icon selector and select the language.
 

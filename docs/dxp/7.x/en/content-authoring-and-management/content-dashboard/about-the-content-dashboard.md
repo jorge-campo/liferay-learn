@@ -20,7 +20,7 @@ To access the Content Dashboard, click on the Global Menu and, under the *Conten
 ![Open the Content Dashboard from the Global Menu](./about-the-content-dashboard/images/02.png)
 
 ```note::
-   If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
+   If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* → *Content Dashboard*.
 ```
 
 You can see different areas in the Content Dashboard page.
