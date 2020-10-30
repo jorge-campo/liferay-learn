@@ -16,7 +16,7 @@ When you [open the Content Dashboard](#opening-the-content-dashboard) page, you 
 To access the Information or Performance sidebar, click the Actions Menu (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* or *Metrics* option. Alternatively, hover over the article and use the *Info* (![Info](../../images/icon-information.png)) or *Metrics* (![Metrics](../../images/icon-analytics.png)) buttons.
 
 ```important::
-   To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your content. To learn more, see [Connecting Liferay DXP to Analytics Cloud](../../../../../../analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md).
+   To access the metrics for your content in the Performance panel, you must connect the Liferay DXP instance with Liferay Analytics Cloud and synchronize your site. To learn more, see `Connecting Liferay DXP to Analytics Cloud <../../../../../../analytics-cloud/latest/en/getting-started/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md>`__.
 ```
 
 ## Opening the Content Dashboard
