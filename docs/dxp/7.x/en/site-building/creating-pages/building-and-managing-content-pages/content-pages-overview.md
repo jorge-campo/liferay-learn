@@ -51,8 +51,8 @@ You can find the following Fragments under the Content Page sidebar:
 
 The Layout Elements section contains two Fragments:
 
-* *Container*: A Fragment that can contain Rows. Each Section you add fills the width of the page. A Section can contain multiple stacked Rows.
-* *Grid*: A Fragment containing a set of columns where Fragments or Widgets can be added. A Row can be nested inside another Row to create more complex layouts. For more information, [Configuring the Grid Fragment](./building-content-pages.md#configuring-the-grid-fragment).
+* *Container*: A Fragment where you can place content that fills the width of the page.
+* *Grid*: A Fragment containing a set of Modules (columns) where other Fragments or Widgets can be added. You can nest a Grid inside another Grid to create a more complex layout. For more information, [Configuring the Grid Fragment](./building-content-pages.md#configuring-the-grid-fragment).
 
     ![The Layouts panel contains layouts for organizing Fragments.](content-pages-overview/images/03.png)
 
