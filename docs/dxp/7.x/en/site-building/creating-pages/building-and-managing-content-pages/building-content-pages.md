@@ -29,7 +29,7 @@ Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), 
 
     ![Choose between Page Design or Content Edition editing modes.](building-content-pages/images/18.png)
 
-1. From the Content Page sidebar, select the *Fragments and Widgets* button (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the Fragments and Widgets for your content.
+1. From the Content Page sidebar, select the *Fragments and Widgets* button (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the Fragments and Widgets for your content. You can browse for the component or use the *Search* field to find a specific Fragment or Widget.
 
     ![Add Fragments and Widgets from the Content Page sidebar](building-content-pages/images/03.png)
 
