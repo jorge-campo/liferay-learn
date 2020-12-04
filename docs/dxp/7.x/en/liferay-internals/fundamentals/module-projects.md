@@ -4,25 +4,25 @@ Liferay applications and customizations are [OSGi modules](https://www.osgi.org/
 
 A module project comprises three things:
 
-1. **Code:** Java classes and required resources, such as images, templates, and additional descriptors. Java packages are private by default but can be [exported](./exporting-packages.md) for other modules to use.
+1. **Code:** Java classes and resources, such as images, templates, and additional descriptors. Java packages are private by default but can be [exported](./exporting-packages.md) for other modules to use.
 
 1. **Build Scripts:** [Gradle](https://gradle.org/) files for building and deploying the module.
 
-1. **Metadata:** A [Bnd](https://bnd.bndtools.org/) file defines the module artifact and specifies packages and capabilities the provides and requires.
+1. **Metadata:** A [Bnd](https://bnd.bndtools.org/) file defines the module artifact and specifies packages and capabilities the module provides and requires.
 
-Here's the project structure:
+Here's the module project structure:
 
 ```
-[module root]
+[project root]
  └── [module 1]
- │    ├── bnd.bnd // Defines the module artifact, provided/required capabilities
+ │    ├── bnd.bnd // Defines the module artifact, provided/required capabilities, and more
  │    ├── build.gradle // Declares dependencies
  │    └── src
  │        └── main
  │            ├── java
  │            │   └── [Java packages]
  │            └── resources
- │                └── [any image files, templates, descriptors, etc.]
+ │                └── [Images, templates, descriptors, etc.]
  │
  └── [module 2]
  │
@@ -40,11 +40,11 @@ Liferay commonly uses three kinds of modules:
 
 1. **API** modules define interfaces.
 
-1. **Implementation** modules provide concrete classes that implement the interfaces.
+1. **Implementation** modules provide concrete classes that implement interfaces.
 
 1. **Client** modules consume the APIs.
 
-You'll learn how to create each one by developing a simple command in [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md) to say hello to users when they supply their names.
+You'll learn how to create each one by developing a simple command in [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md) to greet users when they enter their names.
 
 ![Gogo shell command that greets users.](./module-projects/images/01.png)
 
@@ -78,7 +78,7 @@ The example module defines an API for generating a greeting.
     k8s2-api/build/libs/com.acme.k8s2.api-1.0.0.jar
     ```
 
-1. Start a [Liferay Docker container](../../installation-and-upgrades/installing-liferay/using-liferay-dxp-docker-images/dxp-docker-container-basics.md).
+1. Start a [Liferay Docker container](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/docker-container-basics.md).
 
     ```bash
     docker run -it -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
@@ -115,7 +115,7 @@ The example module defines an API for generating a greeting.
     Output:
 
     ```
-    1152|Active     |   15|Acme K8S2 Greeting API (1.0.0)|1.0.0
+    1152|Active     |   15|Acme K8S2 API (1.0.0)|1.0.0
     ```
 
     This module's ID is `1152`.
@@ -160,14 +160,14 @@ Liferay modules are developed in a Gradle build infrastructure. The following Gr
 | `gradle/` | Contains a Gradle wrapper |
 | `gradlew[.bat]`  | Invokes the Gradle wrapper to execute tasks |
 | `gradle.properties` | Specifies the Liferay product version |
-| `settings.gradle` | Applies Gradle plugins, including [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md). |
+| `settings.gradle` | Applies Gradle plugins, including the [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md) plugin. |
 
-You can add more modules in new subfolders, like the example module's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md).
+You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../developing-applications/tooling/liferay-workspace.md).
 
-Here's the `k8s2-api` module structure in the context of the module root.
+Here's the `k8s2-api` module structure in the context of the project root.
 
 ```
-[module root]
+[project root]
  └── k8s2-api
  │   ├── bnd.bnd
  │   ├── build.gradle
@@ -175,7 +175,7 @@ Here's the `k8s2-api` module structure in the context of the module root.
  │       └── main
  │           └── java
  │               └── com/acme/k8s2
- │                   └── Greeting.java
+ │                   └── Greeter.java
  │
  └── [Gradle files]
 ```
@@ -184,7 +184,7 @@ The `k8s2-api` module folder contains a `bnd.bnd` metadata file, a `build.gradle
 
 ### Write Code
 
-The example module has only one Java class: an interface called `Greeting`.
+The example module has only one Java class: an interface called `Greeter`.
 
 ```java
 package com.acme.k8s2;
@@ -192,14 +192,14 @@ package com.acme.k8s2;
 import aQute.bnd.annotation.ProviderType;
 
 @ProviderType
-public interface Greeting {
+public interface Greeter {
 
 	public void greet(String name);
 
 }
 ```
 
-[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) annotation tells the service registry that anything implementing the interface provides it (i.e., a `Greeting`). The interface's one method called `greet` asks for a `String` and doesn't return anything.
+[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) annotation tells the service registry that anything implementing the interface provides it (i.e., a `Greeter`). The interface's one method called `greet` asks for a `String` and doesn't return anything.
 
 Add your own Java code and resources in your module's `src/main/java` folder and `src/main/resources` folder, respectively.
 
@@ -213,15 +213,15 @@ dependencies {
 }
 ```
 
-It depends on one artifact: the Liferay release's Portal API. The Portal API is a large JAR packed with Liferay, Bnd, and OSGi artifacts associated with the Liferay product release.
+It depends on one artifact: the Liferay release API JAR. It is a large JAR packed with Liferay, Bnd, and OSGi artifacts associated with the Liferay product release.
 
-In the `[module root]/gradle.properties` file, the `liferay.workspace.product` property specifies the product release:
+In the `[project root]/gradle.properties` file, the `liferay.workspace.product` property specifies the product release:
 
 ```properties
 liferay.workspace.product=portal-7.3-ga3
 ```
 
-Lastly, there's no dependency version. That's because Workspace applies the Portal API version associated with the Liferay product release.
+Lastly, there's no dependency version. That's because Workspace applies the Liferay product API version associated with the release.
 
 ```note::
    Please see `Configuring Dependencies <./configuring-dependencies/configuring-dependencies.md>`_ for more information.
@@ -236,13 +236,13 @@ The module JAR's `META-INF/MANIFEST.MF` file describes the module. The manifest 
 The `bnd.bnd` file describes and configures the module.
 
 ```properties
-Bundle-Name: Acme K8S2 Greeting API
+Bundle-Name: Acme K8S2 API
 Bundle-SymbolicName: com.acme.k8s2.api
 Bundle-Version: 1.0.0
 Export-Package: com.acme.k8s2
 ```
 
-The module's name is *Acme K8S2 Greeting API*. Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
+The module's name is *Acme K8S2 API*. Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
 
 #### Generated Metadata
 
@@ -254,7 +254,7 @@ Here's a `META-INF/MANIFEST.MF` file generated for the example module:
 Manifest-Version: 1.0
 Bnd-LastModified: 1598968383025
 Bundle-ManifestVersion: 2
-Bundle-Name: Acme K8S2 Greeting API
+Bundle-Name: Acme K8S2 API
 Bundle-SymbolicName: com.acme.k8s2.api
 Bundle-Version: 1.0.0
 Created-By: 1.8.0_252 (Oracle Corporation)
@@ -266,7 +266,7 @@ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-4.3.0.201909301554
 ```
 
-Bnd propagated all the headers from the `bnd.bnd` file and added more headers and details. For example, the  exported `com.acme.k8s2` package has the the default package version `1.0.0`.
+Bnd propagated all the headers from the `bnd.bnd` file and added more headers and details. For example, the  exported `com.acme.k8s2` package has the default package version `1.0.0`.
 
 ## Conclusion
 
@@ -274,7 +274,7 @@ That's it! As you can see, module projects are the same as other Java projects, 
 
 Now you know what module projects look like, how to build and deploy them, and how to inspect modules at runtime.
 
-Modules leverage each other's capabilities via APIs like the `Greeting` API. Liferay uses OSGi Services to define, implement, and consume APIS. Next, [APIs as OSGi Services](./apis-as-osgi-services.md) demonstrates *implementing* the `Greeting` API using OSGi services.
+Modules leverage each other's capabilities via APIs like the `Greeter` API. Liferay uses OSGi Services to define, implement, and consume APIS. Next, [APIs as OSGi Services](./apis-as-osgi-services.md) demonstrates *implementing* the `Greeter` API using OSGi services.
 
 ## Additional Information
 
