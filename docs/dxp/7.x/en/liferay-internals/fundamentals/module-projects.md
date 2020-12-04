@@ -48,7 +48,7 @@ You'll learn how to create each one by developing a simple command in [Gogo Shel
 
 ![Gogo shell command that greets users.](./module-projects/images/01.png)
 
-Here you'll create the API and learn the parts of a module project. You'll create the implementation module and client module in the next two tutorials.
+Here you'll create the API, learn the parts of a module project, deploy the module, and inspect the module at runtime. You'll create the implementation module and client module in the next two tutorials.
 
 Start with deploying the example API module project.
 
