@@ -59,7 +59,7 @@ The example module defines an API for generating a greeting.
 1. Download and unzip the example.
 
     ```bash
-    curl https://learn.liferay.com/dxp-7.x/liferay-internals/fundamentals/liferay-k8s2.zip -O
+    curl https://learn.liferay.com/dxp/7.x/en/liferay-internals/fundamentals/liferay-k8s2.zip -O
     ```
 
     ```bash
