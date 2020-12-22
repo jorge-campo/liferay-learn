@@ -12,5 +12,5 @@ Once you've created a Display Page Template, you can reuse it for any content th
 
 Read on to learn more about these topics:
 
-* [Creating a Display Page Template](./creating-a-display-page-template.md)
+* [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)
 * [Publishing Content With Display Pages](./publishing-content-with-display-pages.md)
