@@ -44,11 +44,15 @@ Now that your Display Page Template is created, you can [publish your content wi
 
 You can manage the different Display Page Templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of the site content that is using a specific Display Page Template.
 
+```note::
+   The *View Usages* option does not provide the usage of content assigned to the default Display Page Template.
+```
+
 ![Managing your Display Page Template using the Actions menu](./creating-and-managing-display-page-templates/images/06.png)
 
 Before you delete a Display Page Template in use by some of your site content, you must unassign the Display Page Template from the content using one of these options:
 
-- Assign to Default --- Your content is unassigned from the current Display Page Template and assigned to the default Display Page Template.
+- Assign to Default --- Your content is unassigned from the current Display Page Template and assigned to the default Display Page Template for the content type and subtype (if applicable.)
 - Unassign --- Your content is not assigned to any Display Page Template.
 
 To view your Display Page Template usage and unassign your content:
