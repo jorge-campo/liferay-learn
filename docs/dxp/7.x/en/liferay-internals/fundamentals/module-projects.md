@@ -63,10 +63,14 @@ The example module defines an API for generating a greeting.
     ```
 
     ```bash
-    unzip liferay-k8s2.zip
+    unzip liferay-k8s2.zip -d liferay-k8s2
     ```
 
 1. Build the module JAR.
+
+    ```bash
+    cd liferay-k8s2
+    ```
 
     ```bash
     ./gradlew jar
