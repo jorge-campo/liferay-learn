@@ -1,0 +1,3 @@
+Bundle-Name: Acme J0C0 Implementation
+Bundle-SymbolicName: com.acme.j0c0.impl
+Bundle-Version: 1.0.0
