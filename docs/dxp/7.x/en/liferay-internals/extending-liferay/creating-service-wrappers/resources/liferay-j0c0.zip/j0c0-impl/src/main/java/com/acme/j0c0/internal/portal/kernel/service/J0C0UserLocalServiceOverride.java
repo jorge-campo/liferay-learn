@@ -11,7 +11,7 @@ import java.util.Map;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-@Component(immediate = true, property = {}, service = ServiceWrapper.class)
+@Component(service = ServiceWrapper.class)
 public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 
 	public J0C0UserLocalServiceOverride() {
