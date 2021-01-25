@@ -11,6 +11,9 @@ import java.util.Map;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
+
 @Component(service = ServiceWrapper.class)
 public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 
@@ -28,6 +31,10 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 		System.out.println(
 			"Authenticating user by email address " + emailAddress);
 
+		if (_log.isWarnEnabled()) {
+			_log.warn("Authenticate user by email address method was invoked");
+		}
+
 		return super.authenticateByEmailAddress(
 			companyId, emailAddress, password, headerMap, parameterMap,
 			resultsMap);
@@ -37,6 +44,10 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 	public User getUser(long userId) throws PortalException {
 		System.out.println("Getting user by id " + userId);
 
+		if (_log.isWarnEnabled()) {
+			_log.warn("Getting user by ID method was invoked");
+		}
+
 		return super.getUser(userId);
 	}
 
@@ -44,5 +55,8 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 	private void _serviceSetter(UserLocalService userLocalService) {
 		setWrappedService(userLocalService);
 	}
+
+	private static final Log _log = LogFactoryUtil.getLog(
+		J0C0UserLocalServiceOverride.class);
 
 }
