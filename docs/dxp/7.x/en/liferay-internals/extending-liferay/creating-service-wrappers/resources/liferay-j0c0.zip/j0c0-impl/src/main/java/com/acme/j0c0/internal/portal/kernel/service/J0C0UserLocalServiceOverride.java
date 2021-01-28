@@ -27,11 +27,10 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 			Map<String, Object> resultsMap)
 		throws PortalException {
 
-		System.out.println(
-			"Authenticating user by email address " + emailAddress);
-
 		if (_log.isWarnEnabled()) {
-			_log.warn("Authenticate user by email address method was invoked");
+			_log.warn(
+				"This is the J0C0 Implementation authenticateByEmailAddress " +
+					"method");
 		}
 
 		return super.authenticateByEmailAddress(
@@ -41,10 +40,8 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 
 	@Override
 	public User getUser(long userId) throws PortalException {
-		System.out.println("Getting user by id " + userId);
-
 		if (_log.isWarnEnabled()) {
-			_log.warn("Getting user by ID method was invoked");
+			_log.warn("This is the J0C0 Implementation getUser method");
 		}
 
 		return super.getUser(userId);
