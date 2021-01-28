@@ -65,7 +65,7 @@ A Collection Page is a type of page linked to a Collection. To show the Collecti
 To display the Collection using a Display Page and the Asset Publisher, you must complete the following steps:
 
 1. [Create a Display Page Template](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
-1. Configure an Asset Publisher with the Collection (Liferay 7.3+) or Content Set (Liferay 7.2). See [Displaying Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/displaying-collections-and-collection-pages.md) for more information.
+1. Configure an Asset Publisher with the Collection (Liferay 7.3+) or Content Set (Liferay 7.2). See [Displaying Collections](../../displaying-content/displaying-collections.md) for more information.
 
 ## Related Information
 
