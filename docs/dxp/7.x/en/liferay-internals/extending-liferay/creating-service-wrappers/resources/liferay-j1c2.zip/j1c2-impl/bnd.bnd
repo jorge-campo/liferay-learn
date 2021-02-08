@@ -1,0 +1,3 @@
+Bundle-Name: Acme J1C2 Implementation
+Bundle-SymbolicName: com.acme.j1c2.impl
+Bundle-Version: 1.0.0
