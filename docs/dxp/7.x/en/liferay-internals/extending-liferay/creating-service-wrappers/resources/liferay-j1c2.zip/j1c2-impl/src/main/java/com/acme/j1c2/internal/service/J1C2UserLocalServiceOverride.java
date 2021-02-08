@@ -1,4 +1,4 @@
-package com.acme.j0c0.internal.portal.kernel.service;
+package com.acme.j1c2.internal.service;
 
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.log.Log;
@@ -14,9 +14,9 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 @Component(service = ServiceWrapper.class)
-public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
+public class J1C2UserLocalServiceOverride extends UserLocalServiceWrapper {
 
-	public J0C0UserLocalServiceOverride() {
+	public J1C2UserLocalServiceOverride() {
 		super(null);
 	}
 
@@ -29,7 +29,7 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 
 		if (_log.isWarnEnabled()) {
 			_log.warn(
-				"This is the J0C0 Implementation authenticateByEmailAddress " +
+				"This is the J1C2 Implementation authenticateByEmailAddress " +
 					"method");
 		}
 
@@ -41,7 +41,7 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 	@Override
 	public User getUser(long userId) throws PortalException {
 		if (_log.isWarnEnabled()) {
-			_log.warn("This is the J0C0 Implementation getUser method");
+			_log.warn("This is the J1C2 Implementation getUser method");
 		}
 
 		return super.getUser(userId);
@@ -53,6 +53,6 @@ public class J0C0UserLocalServiceOverride extends UserLocalServiceWrapper {
 	}
 
 	private static final Log _log = LogFactoryUtil.getLog(
-		J0C0UserLocalServiceOverride.class);
+		J1C2UserLocalServiceOverride.class);
 
 }

@@ -16,3 +16,4 @@ docs/**/liferay-????.zip/settings.gradle
 docs/**/liferay-????.zip/setup_tutorial.sh
 docs/**/liferay-????.zip/source-formatter-suppressions.xml
 node_modules
+site/update_site.sh
