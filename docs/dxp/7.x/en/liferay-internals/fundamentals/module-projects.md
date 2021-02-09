@@ -63,13 +63,13 @@ The example module defines an API for generating a greeting.
     ```
 
     ```bash
-    unzip liferay-k8s2.zip -d liferay-k8s2
+    unzip liferay-k8s2.zip
     ```
 
 1. Build the module JAR.
 
     ```bash
-    cd liferay-k8s2
+    cd liferay-k8s2.zip
     ```
 
     ```bash
@@ -91,7 +91,7 @@ The example module defines an API for generating a greeting.
 1. Deploy the module JAR.
 
     ```bash
-    docker cp k8s2-api/build/libs/com.acme.k8s2.api-1.0.0.jar $(docker ps -lq):/opt/liferay/deploy
+    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
     Log messages show Liferay processing the JAR and starting the module.
