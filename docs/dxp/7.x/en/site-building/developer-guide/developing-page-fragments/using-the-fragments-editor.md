@@ -15,7 +15,7 @@ Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-ed
        In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* → *Site Builder* → *Page Fragments*.
     ```
 
-1. Click the *Add* button (![Add Button](../../../images/icon-duplicate.png)), and enter a *name* and *description* for the new Collection. The Collection's name is displayed in the Fragments and Widgets panel of the Content Page sidebar.
+1. Click the *Add* button (![Add Button](../../../images/icon-duplicate.png)) next to the Collection's sidebar, and enter a *name* and *description* for the new Collection. The Collection's name is displayed in the Fragments and Widgets panel of the Content Page sidebar.
 
     ```tip::
       Create Collections that group Fragments by functionality or by teams and departments.
