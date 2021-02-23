@@ -69,7 +69,7 @@ The example module defines an API for generating a greeting.
 1. Build the module JAR.
 
     ```bash
-    cd liferay-k8s2.zip
+    cd liferay-k8s2
     ```
 
     ```bash
