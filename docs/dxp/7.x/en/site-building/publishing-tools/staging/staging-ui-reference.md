@@ -72,9 +72,22 @@ Custom advanced settings are divided into the following sections:
 
 If you want to publish pages with a custom theme, you must check the Theme Settings option under the *Look and Feel* heading for your staging configuration. Otherwise, the default theme is applied.
 
-**Content**: Select the content you want to include in your publish process. You can publish *all* content of the selected types, or specify a date and time parameter to limit the content published. You can also click on *Change* for each content type to manage items and other settings included in each type, such as *version history*, *vocabularies*, and *previews and thumbnails*. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
+**Content**: Select the content you want to include in your publish process. Using the radio buttons, you can publish *all* content of the selected types, or specify a date and time parameter to limit the content published. You can also use this option to check the content that changed in Staging and is awaiting publication.
 
 ![Select the content you want to include in your publish process.](./staging-ui-reference/images/09.png)
+
+| Option | Description |
+| --- | --- |
+| *All* | Shows all the content available for publication. |
+| *From Last Publish Date* | Only shows the content updated since the last publication. |
+| *Date Range* | Shows the content updated during a specific period of time. |
+| *Last* | Shows the content updated in the last hours or days. |
+
+```note::
+   After selecting your Content option, click *Refresh Counts* to update the number of results.
+```
+
+You can also click on *Change* for each content type to manage items and other settings included in each type, such as *version history*, *vocabularies*, and *previews and thumbnails*. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
 
 **Permissions**: Select whether to include permissions for the Pages and widgets when your changes are published.
 
