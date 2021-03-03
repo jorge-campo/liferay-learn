@@ -2,7 +2,7 @@
 
 You can tailor your Content Page to different groups of users, providing each group a personalized experience, rather than a generic one. You can also leverage Content Page personalization to conduct A/B Testing (for more information, see [Content Page Experiences and A/B Testing](#content-page-experiences-and-ab-testing)).
 
-Personalizing your Content page for different users is a two-step process:
+Personalizing your Content Page for different users is a two-step process:
 
 1. [Define a Segment](../segmentation/creating-and-managing-user-segments.md) for the users you want to provide a personalized experience.
 2. [Create a Experience](#creating-a-new-content-page-experience) with customized content for your Segment.
@@ -19,9 +19,9 @@ Consider the following information when you create multiple experiences for the 
 - You can reorder Experiences in the selection dialog using the Up (![Up](../../../images/icon-angle-up.png)) and Down (![Down](../../../images/icon-angle-down.png)) controls.
 - When you have multiple experiences in the same Content Page, their order determines their preference:
   
-  - Experiences at the top of the list take preference over the ones below.
+  - Experiences at the top of the list take precedence over the ones below.
   - When a user meets the criteria for more than one Experience, the Experience listed first is the active one.
-  - An experience is inactive when placed below an experience targeted to the *Anyone* Segment.
+  - An Experience is inactive when placed below an experience targeted to the *Anyone* Segment.
   - New Experiences are listed below the *Default* experience and inactive by default.
 
   ```tip::
@@ -40,7 +40,7 @@ In this example:
 
 - A non-authenticated user sees the Experience *Anonymous User* (the one with the _Active_ label). This users doesn't see the *Anonymous User Promotions* Experience because it's listed below *Anonymous User*.
 - Authenticated users don't see the *Authenticated user* Experience, because the *No customization* Experience applies to the *Anyone* Segment and it's listed first.
-- Anyone not in the *Anonymous User* or *Authenticated User* Segments sees the *Default* Experience.
+- Anyone not in the *Anonymous User* or *Authenticated User* Segments sees the *No customization* Experience because it targets *Anyone*.
 
 ## Creating a New Content Page Experience
 
@@ -80,9 +80,7 @@ When you edit a Content Page, you can click on the *Experience* to manage the op
 
 When you [create an A/B Test](../ab-testing/creating-ab-tests.md) in Liferay DXP, you choose an Experience for the test. This Experience can be the Default one, or any other you have created.
 
-To avoid changes in the Experience that can interfere with the A/B Test results, you cannot edit an Experience that is part of a running A/B Test.
-
-![You cannot edit Experiences that are part of a running A/B Test](./content-page-personalization/images/05.png)
+To avoid changes in the Experience that can interfere with the A/B Test results, you cannot edit an Experience that is part of a running A/B Test. In this situation, the Experience shows a locker icon (![locker](../../../images/icon-lock.png)) next to its name.
 
 For more information about A/B Testing in Liferay DXP and Liferay Analytics, see [A/B Testing](../ab-testing/ab-testing.md).
 
