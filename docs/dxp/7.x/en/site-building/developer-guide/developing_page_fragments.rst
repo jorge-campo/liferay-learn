@@ -13,6 +13,7 @@ Developing Page Fragments
    developing-page-fragments/adding-validation-rules.md
    developing-page-fragments/auto-deploying-fragments.md
    developing-page-fragments/including-default-resources-with-fragments.md
+   developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
 
 -  :doc:`/site-building/developer-guide/developing-page-fragments/developing-fragments-intro`
 -  :doc:`/site-building/developer-guide/developing-page-fragments/using-the-fragments-editor`
@@ -23,3 +24,4 @@ Developing Page Fragments
 -  :doc:`/site-building/developer-guide/developing-page-fragments/adding-validation-rules`
 -  :doc:`/site-building/developer-guide/developing-page-fragments/auto-deploying-fragments`
 -  :doc:`/site-building/developer-guide/developing-page-fragments/including-default-resources-with-fragments`
+-  :doc:`/site-building/developer-guide/developing-page-fragments/setting-the-order-of-elements-in-a-fragment`
