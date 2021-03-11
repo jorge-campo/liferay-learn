@@ -121,7 +121,7 @@ To understand how you can modify the order of elements in your Slider or Tab Fra
 
 1. Go to *Site Administration* &rarr; *Design* &rarr; *Fragments*.
 1. Under the *Collections* area, click the sample *z4b8 Collection* you [deployed before](#deploy-the-sample-liferay-dxp-7.3-slider-fragment-in-liferay-dxp-7.4).
-1. Click the *Actions* button in the and select *Edit* to open the Fragment Editor.
+1. Click on the Fragment's *Actions* (![Action](./../../../images/icon-actions.png)) button and select *Edit* to open the [Fragments Editor](./using-the-fragments-editor.md).
 
     ![Edit the imported Fragment to open the Fragment Editor](./setting-the-order-of-elements-in-a-fragment/images/06.png)
 
