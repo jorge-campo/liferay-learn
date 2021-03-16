@@ -105,7 +105,7 @@ The example module defines an API for generating a greeting.
 
 1. Go to `http://localhost:8080` and sign in using the default credentials:
 
-   **User Name:** `test@liferay.com`  
+   **User Name:** `test@liferay.com`
    **Password:** `test`
 
 1. Open the [Gogo Shell](./using-the-gogo-shell/using-the-gogo-shell.md).
@@ -203,7 +203,7 @@ public interface Greeter {
 }
 ```
 
-[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) annotation tells the service registry that anything implementing the interface provides it (i.e., a `Greeter`). The interface's one method called `greet` asks for a `String` and doesn't return anything.
+The [`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) annotation tells the service registry that anything implementing the interface provides it (i.e., a `Greeter`). The interface's one method called `greet` asks for a `String` and doesn't return anything.
 
 Add your own Java code and resources in your module's `src/main/java` folder and `src/main/resources` folder, respectively.
 
@@ -233,7 +233,7 @@ Lastly, there's no dependency version. That's because Workspace applies the Life
 
 ### Specify Metadata
 
-The module JAR's `META-INF/MANIFEST.MF` file describes the module. The manifest contains properties called manifest headers, that specify packages the module exports/imports and capabilities the module provides/requires. Since the build infrastructure provides Bnd, you need only specify a few initial headers in your module's `bnd.bnd` file--Bnd generates most other values based on its inspection of your module.
+The module JAR's `META-INF/MANIFEST.MF` file describes the module. The manifest contains properties called manifest headers that specify packages the module exports/imports and capabilities the module provides/requires. Since the build infrastructure provides Bnd, you need only specify a few initial headers in your module's `bnd.bnd` file. Bnd generates most other values based on its inspection of your module.
 
 #### Initial Metadata
 
@@ -270,7 +270,7 @@ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-4.3.0.201909301554
 ```
 
-Bnd propagated all the headers from the `bnd.bnd` file and added more headers and details. For example, the  exported `com.acme.k8s2` package has the default package version `1.0.0`.
+Bnd propagated all the headers from the `bnd.bnd` file and added more headers and details. For example, the exported `com.acme.k8s2` package has the default package version `1.0.0`.
 
 ## Conclusion
 
