@@ -39,7 +39,7 @@ If you want to identify the drop zones, include the `data-lfr-drop-zone-id` HTML
 
 ![Comparison between the drop zones layout in the Content Page Editor between Liferay DXP 7.3 and Liferay DXP 7.4+](./defining-fragment-drop-zones/images/03.png)
 
-The following code excerpt shows how to use the `dadta-lfr-drop-zone-id` attribute to identify drop zones within the Tabs Fragment:
+The following code excerpt shows how to use the `data-lfr-drop-zone-id` attribute to identify drop zones within the Tabs Fragment:
 
    ```html
       <div class="tab-panel">
