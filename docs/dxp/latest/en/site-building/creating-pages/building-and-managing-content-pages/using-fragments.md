@@ -12,6 +12,7 @@ To access available Fragments, go to a Content Page, and click on the *Edit* ico
 * [Using Featured Content Components](#featured-content)
 * [Using Footers](#footers)
 * [Using Navigation Bars](#navigation-bars)
+* [Localizing Fragments](#localizing-fragments)
 
 ## Adding Fragments
 
@@ -186,6 +187,37 @@ Use *Footer* Fragments to add a custom footer to [Master Page Templates](../defi
 Use *Navigation Bar* Fragments to add a custom header to [Master Page Templates](../defining-headers-and-footers/master-page-templates.md) for Content Pages. Each navigation bar includes a navigation menu, sign-in link, and image element for your logo. DXP includes the following layouts for Navigation Bar Fragments:
 
 ![Add a custom header to Master Page Templates for Content Page.](./using-fragments/images/14.png)
+
+## Localizing Fragments
+
+> Available: Liferay DXP 7.4+
+
+You can adapt the Fragment to your target audience's language by localizing the Fragment content. By default, you can localize:
+
+- [Image Description (*alt text*)](#localizing-alternative-text-for-images)
+- [Editable URLs](#localizing-editable-urls)
+
+In addition to these elements, you can localize other elements in your fragment using the `localizable` attribute in the [Fragment configurable options](../../developer-guide/developing-page-fragments/adding-configuration-options-to-fragments.md).
+
+### Localizing Alternative Text for Images
+
+You can add localization in different languages for the image description (also known as *alternative text* or *alt text*) in built-in and custom Fragments. When you change the target language for your Contente Page using the language selector in the editor toolbar (A), you can edit the *Image Description* adapting the text for the target language (B).
+
+![You can localize the Image Description in the Content Page editor](./using-fragments/images/15.png)
+
+```tip::
+    The flag icon next to the Image Description indicates the field as localizable.
+```
+
+If the Image Description doesn't have a translation, the description shows the default Content Page language.
+
+### Localizing Editable URLs
+
+When you localize a URL or link in your Content Page, you can redirect the users to different URLs and content, based on their target language. When you change the target language for your Contente Page using the language selector in the editor toolbar (A), you can update the *URL* to the link of your choice (B).
+
+![You can localize the Link in the Content Page editor](./using-fragments/images/16.png)
+
+You can localize links you enter manually and links from a content field. If the link doesn't have a translation, the active URL is the one for the default Content Page language.
 
 ## Additional Information
 
