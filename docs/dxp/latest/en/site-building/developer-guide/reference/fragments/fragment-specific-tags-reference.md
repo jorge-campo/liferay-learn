@@ -4,11 +4,12 @@ Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags
 
 Page Fragments have access to these types of liferay-specific tags and attributes that add these features:
 
-* Editable Text
-* Editable Images
-* Editable Links
-* Editable HTML (Liferay Portal CE 7.3 GA3+ and DXP 7.3+)
-* Embedded Widgets
+* [Editable Text](#making-text-editable)
+* [Editable Images](#making-images-editable)
+* [Editable Links](#creating-editable-links)
+* [Editable HTML (Liferay Portal CE 7.3 GA3+ and DXP 7.3+)](#creating-editable-html)
+* [Embedded Widgets](#including-widgets-within-a-fragment)
+* [Localizable Fragment Fields](#localizing-fragment-configuration-fields)
 
 ```note::
   When you start typing the name of a tag, the `HTML editor <../../developing-page-fragments/using-the-fragments-editor.md>`_ provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -216,3 +217,41 @@ When you deploy your widget, it's available to add. The name you specify in the 
 ```note::
     According to the W3C HTML standards, custom elements can't be self closing. Therefore, even though you can't add anything between the opening and closing ``<lfr-widget...>`` tags, you can't use the self closing notation for the tag.
 ```
+
+## Localizing Fragment Configuration Fields
+
+> Available: Liferay DXP 7.4+
+
+You can adapt the Fragment's content to your target audience's language by localizing the Fragment configuration fields. To localize a Fragment configuration field, use the `localizable` attribute.
+
+```note::
+    The `localizable` attribute is not available for Fragment configuration fields where the `configurationRole` property is set to `style`. 
+```
+
+In the following code excerpt, the Heading Fragment configuration includes the `localizable` attribute set to `true` for the only `field` under `fieldSets`:
+
+```markup
+{
+  "fields": [
+    {
+      "dataType": "string",
+      "defaultValue": "h1",
+      "label": "heading-level",
+      "localizable": true,
+      "name": "headingLevel",
+      "type": "select",
+```
+
+You can use this example with the Heading Fragment to localize a header in different languages. On the image, the Content Page uses the default en-US language. The 'Chat Support' Fragment Heading incorporates the `localizable` attribute set to `true`, while the 'Phone' Heading doesn't (A). When the Content Page target language changes to es-ES (B), the localizable Fragment Heading 'Chat Support' shows the translation for the target language. The 'Phone' Fragment Heading without the localizable attribute uses the default Content Page language (en-US, in this example).
+
+![Localizable elements in the Fragment show the flag icon under the General tab and support Content Page localization](./fragment-specific-tags-reference/images/04.png)
+
+```tip::
+    The flag icon under the Fragment's General settings indicates the field as localizable. 
+```
+
+## Additional Information
+
+- [Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
+- [Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)
+- [Fragment Configuration Types Reference](./fragment-configuration-types-reference.md)
