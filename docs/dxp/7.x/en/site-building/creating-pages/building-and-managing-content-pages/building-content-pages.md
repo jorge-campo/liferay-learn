@@ -182,6 +182,10 @@ You can adjust the module's width to customize the layout:
 
    ![You can adjust the spacing of modules in a Layout.](./building-content-pages/images/16.gif)
 
+   ```tip::
+   You can use the Grid Fragment to customize the content layout for the different screen sizes in desktop and mobile devices. For more information, see `Building Responsive Layouts with the Grid Fragment <../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md>`_
+   ```
+
 ### Copying a Fragment
 
 To save time, you can duplicate a Fragment (Component, Section, Row, etc.):
