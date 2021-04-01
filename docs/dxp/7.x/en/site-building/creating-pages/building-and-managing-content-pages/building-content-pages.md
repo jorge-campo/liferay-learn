@@ -64,15 +64,6 @@ Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), 
 
     ![Edit an existing Content Page by dropping Fragments or Widgets in the edit area.](building-content-pages/images/02.png)
 
-    When you enter the Site Builder view, you can add or edit your content in two ways:
-
-    - *Page Design*: If you have permission to update the page and the page content, this mode is available.
-    - *Content Edition*: If you only have permission to update the page but not the page content, you can use this mode.
-
-    The editing options available in the Content Page sidebar depend on the editing mode you choose.
-
-    ![Choose between Page Design or Content Edition editing modes.](building-content-pages/images/18.png)
-
 1. From the Content Page sidebar, select the *Fragments and Widgets* button (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the Fragments and Widgets for your content. You can browse for the component or use the *Search* field to find a specific Fragment or Widget.
 
     ![Add Fragments and Widgets from the Content Page sidebar](building-content-pages/images/03.png)
