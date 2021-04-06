@@ -222,33 +222,58 @@ When you deploy your widget, it's available to add. The name you specify in the 
 
 > Available: Liferay DXP 7.4+
 
-You can adapt the Fragment's content to your target audience's language by localizing the Fragment configuration fields. To localize a Fragment configuration field, use the `localizable` attribute.
+You can change the Fragment configuration fields depending on the Page's target language. For example, for a Button Fragment, you can define a button style when the page language is EN-us, and a different button style when the page language is ES-es. To localize a Fragment configuration field, use the `localizable` attribute.
 
 ```note::
     The `localizable` attribute is not available for Fragment configuration fields where the `configurationRole` property is set to `style`. 
 ```
 
-In the following code excerpt, the Heading Fragment configuration includes the `localizable` attribute set to `true` for the only `field` under `fieldSets`:
+In the following code excerpt, the Button Fragment configuration includes the `localizable` attribute set to `true` for the `fields` section under `fieldSets`:
 
 ```markup
-{
-  "fields": [
-    {
-      "dataType": "string",
-      "defaultValue": "h1",
-      "label": "heading-level",
-      "localizable": true,
-      "name": "headingLevel",
-      "type": "select",
+"fieldSets": [
+  {
+    "fields": [
+      {
+        "dataType": "string",
+        "defaultValue": "primary",
+        "label": "type",
+        "name": "buttonType",
+        "type": "select",
+        "localizable": true,
+        "typeOptions": {
+          "validValues": [
+            {
+              "value": "primary"
+            },
+            {
+              "value": "secondary"
+            },
+            {
+              "value": "link"
+            },
+            {
+              "value": "outline-primary"
+            },
+            {
+              "value": "outline-secondary"
+            }
+          ]
+        }
+      }
+    ]
+  }
 ```
 
-You can use this example with the Heading Fragment to localize a header in different languages. On the image, the Content Page uses the default en-US language. The 'Chat Support' Fragment Heading incorporates the `localizable` attribute set to `true`, while the 'Phone' Heading doesn't (A). When the Content Page target language changes to es-ES (B), the localizable Fragment Heading 'Chat Support' shows the translation for the target language. The 'Phone' Fragment Heading without the localizable attribute uses the default Content Page language (en-US, in this example).
+You can use this sample code to change the button type depending on the Page's target language. In the following example, the 'Contact Us'/'Contacto' Button Fragment incorporates the `localizable` attribute set to `true`. The example uses this attribute to configure the _Primary_ button type when the Page uses the EN-us language (A) and the _Outline Primary_ type when the Page uses ES-es (B).
 
-![Localizable elements in the Fragment show the flag icon under the General tab and support Content Page localization](./fragment-specific-tags-reference/images/04.png)
+![Localizable elements in the Fragment show the flag icon under the General tab and support different configurations for different languages](./fragment-specific-tags-reference/images/04.png)
 
 ```tip::
-    The flag icon under the Fragment's General settings indicates the field as localizable. 
+    The flag icon under the Fragment's General settings indicates the configuration field as localizable. 
 ```
+
+Fragments with the `localizable` attribute that do not specify a custom configuration for a language use the default Page language's configuration.
 
 ## Additional Information
 

@@ -4,15 +4,15 @@ Page *Fragments* are extensible, reusable, drag-and-drop elements that serve as 
 
 To access available Fragments, go to a Content Page, and click on the *Edit* icon (![Edit](../../../images/icon-edit.png)) in the Application Bar. Ensure your edit mode is set to *Page Design* and click on *Fragment and Widgets* (![Fragments and Widgets](../../../images/icon-cards2.png)) in the editing Sidebar Menu.
 
-* [Adding Fragments](#adding-fragments)
-* [Configuring Fragments](#configuring-fragments)
-* [Using Layout Elements](#layout-elements)
-* [Using Basic Components](#basic-components)
-* [Using Content Display Fragments](#content-display)
-* [Using Featured Content Components](#featured-content)
-* [Using Footers](#footers)
-* [Using Navigation Bars](#navigation-bars)
-* [Localizing Fragments](#localizing-fragments)
+- [Adding Fragments](#adding-fragments)
+- [Configuring Fragments](#configuring-fragments)
+- [Using Layout Elements](#layout-elements)
+- [Using Basic Components](#basic-components)
+- [Using Content Display Fragments](#content-display)
+- [Using Featured Content Components](#featured-content)
+- [Using Footers](#footers)
+- [Using Navigation Bars](#navigation-bars)
+- [Localizing the Fragment Configuration](#localizing-the-fragment-configuration)
 
 ## Adding Fragments
 
@@ -188,20 +188,20 @@ Use *Navigation Bar* Fragments to add a custom header to [Master Page Templates]
 
 ![Add a custom header to Master Page Templates for Content Page.](./using-fragments/images/14.png)
 
-## Localizing Fragments
+## Localizing the Fragment Configuration
 
 > Available: Liferay DXP 7.4+
 
-You can adapt the Fragment to your target audience's language by localizing the Fragment content. By default, you can localize:
+You can localize the following Fragment settings to your target audience's language:
 
 - [Image Description (*alt text*)](#localizing-alternative-text-for-images)
 - [Editable URLs](#localizing-editable-urls)
 
-In addition to these elements, you can localize other elements in your fragment using the `localizable` attribute in the [Fragment configurable options](../../developer-guide/developing-page-fragments/adding-configuration-options-to-fragments.md).
+Additionally, you can change the Fragment configuration fields depending on the Page's target language using the `localizable` attribute. For more information, read the [Fragment Specific Tags and Attributes Reference](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
 
 ### Localizing Alternative Text for Images
 
-You can add localization in different languages for the image description (also known as *alternative text* or *alt text*) in built-in and custom Fragments. When you change the target language for your Contente Page using the language selector in the editor toolbar (A), you can edit the *Image Description* adapting the text for the target language (B).
+You can add localization in different languages for the image description (also known as *alternative text* or *alt text*) in built-in and custom Fragments. When you change the target language for your Content Page using the language selector in the editor toolbar (A), you can edit the *Image Description* adapting the text for the target language (B).
 
 ![You can localize the Image Description in the Content Page editor](./using-fragments/images/15.png)
 
@@ -213,9 +213,9 @@ If the Image Description doesn't have a translation, the description shows the d
 
 ### Localizing Editable URLs
 
-When you localize a URL or link in your Content Page, you can redirect the users to different URLs and content, based on their target language. When you change the target language for your Contente Page using the language selector in the editor toolbar (A), you can update the *URL* to the link of your choice (B).
+When you localize a URL or link in your Content Page, you can redirect the users to different URLs and content, based on their target language. When you change the target language for your Content Page using the language selector in the editor toolbar (A), you can update the *URL* to the link of your choice (B).
 
-![You can localize the Link in the Content Page editor](./using-fragments/images/16.png)
+![You can localize the link in the Content Page editor](./using-fragments/images/16.png)
 
 You can localize links you enter manually and links from a content field. If the link doesn't have a translation, the active URL is the one for the default Content Page language.
 
