@@ -228,7 +228,7 @@ You can change the Fragment configuration fields depending on the Page's target 
     The `localizable` attribute is not available for Fragment configuration fields where the `configurationRole` property is set to `style`. 
 ```
 
-In the following code excerpt, the Button Fragment configuration includes the `localizable` attribute set to `true` for the `fields` section under `fieldSets`. The `localizable` attribute is set at the field level. In the example, there is only one `buttonType` field. If you have a fragment with multiple fields, you can set the `localizable` attribute to each one of them:
+In the following code excerpt, the Button Fragment configuration includes the `localizable` attribute set to `true` for the `fields` section under `fieldSets`. The `localizable` attribute is set at the field level. In the example, there is only one `buttonType` field. If you have a fragment with multiple fields, you can set the `localizable` attribute for each one of them:
 
 ```markup
 "fieldSets": [
