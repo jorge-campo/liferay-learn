@@ -192,7 +192,7 @@ Use *Navigation Bar* Fragments to add a custom header to [Master Page Templates]
 
 > Available: Liferay DXP 7.4+
 
-You can localize the following Fragment settings to your target audience's language:
+You can localize the following Fragment settings for the target audience's language:
 
 - [Image Description (*alt text*)](#localizing-alternative-text-for-images)
 - [Editable URLs](#localizing-editable-urls)
@@ -221,6 +221,6 @@ You can localize links you enter manually and links from a content field. If the
 
 ## Additional Information
 
-* [Content Page Overview](./content-pages-overview.md)
-* [Building Content Pages](./building-content-pages.md)
-* [Editing Content Pages](./editing-content-pages.md)
+- [Content Page Overview](./content-pages-overview.md)
+- [Building Content Pages](./building-content-pages.md)
+- [Editing Content Pages](./editing-content-pages.md)

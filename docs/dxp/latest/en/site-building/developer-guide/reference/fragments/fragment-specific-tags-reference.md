@@ -222,13 +222,13 @@ When you deploy your widget, it's available to add. The name you specify in the 
 
 > Available: Liferay DXP 7.4+
 
-You can change the Fragment configuration fields depending on the Page's target language. For example, for a Button Fragment, you can define a button style when the page language is EN-us, and a different button style when the page language is ES-es. To localize a Fragment configuration field, use the `localizable` attribute.
+You can change the Fragment configuration fields depending on the Page's target language. For example, for a Button Fragment, you can define a button type when the page language is en-US, and a different button type when the page language is es-ES. To localize a Fragment configuration field, use the `localizable` attribute.
 
 ```note::
     The `localizable` attribute is not available for Fragment configuration fields where the `configurationRole` property is set to `style`. 
 ```
 
-In the following code excerpt, the Button Fragment configuration includes the `localizable` attribute set to `true` for the `fields` section under `fieldSets`:
+In the following code excerpt, the Button Fragment configuration includes the `localizable` attribute set to `true` for the `fields` section under `fieldSets`. The `localizable` attribute is set at the field level. In the example, there is only one `buttonType` field. If you have a fragment with multiple fields, you can set the `localizable` attribute to each one of them:
 
 ```markup
 "fieldSets": [
@@ -265,7 +265,7 @@ In the following code excerpt, the Button Fragment configuration includes the `l
   }
 ```
 
-You can use this sample code to change the button type depending on the Page's target language. In the following example, the 'Contact Us'/'Contacto' Button Fragment incorporates the `localizable` attribute set to `true`. The example uses this attribute to configure the _Primary_ button type when the Page uses the EN-us language (A) and the _Outline Primary_ type when the Page uses ES-es (B).
+You can use this sample code to change the button type depending on the Page's target language. In the following example, the 'Contact Us'/'Contacto' Button Fragment incorporates the `localizable` attribute set to `true` for the `buttonType` field. The example uses this attribute to configure the _Primary_ button type when the Page uses the en-US language (A) and the _Outline Primary_ type when the Page uses es-ES (B).
 
 ![Localizable elements in the Fragment show the flag icon under the General tab and support different configurations for different languages](./fragment-specific-tags-reference/images/04.png)
 
