@@ -46,7 +46,8 @@ Viewing the perspective of a User Segment previews any personalizations for Cont
 
 ![You can preview different experiences from the Preview Panel.](./personalizing-site-experience/images/04.png)
 
-## Next Steps
+## Related Information
 
-* [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md)
-* [Content Page Personalization](./experience-personalization/content-page-personalization.md)
+- [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md)
+- [Content Page Personalization](./experience-personalization/content-page-personalization.md)
+- [Creating and Managing Experiences](./experience-personalization/creating-and-managing-experiences.md)

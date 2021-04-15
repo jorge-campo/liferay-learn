@@ -9,10 +9,9 @@ When the A/B Test finishes, you can find the test results in Analytics Cloud and
 To review the A/B Test results and publish your Variant,
 
 1. Go to the Content Page where the A/B Test is running.
-
-1. In the Control Menu, click the *A/B Testing* flask icon (![A/B Test icon](../../../images/icon-ab-testing.png)). Starting Liferay DXP 7.3, you can also access the A/B Test panel (via the flask icon) and view the test status for an experience through the [experience selection dialog](../../personalizing-site-experience/experience-personalization/content-page-personalization.md).
+1. In the Control Menu, click the *A/B Testing* flask icon (![A/B Test icon](../../../images/icon-ab-testing.png)). Starting Liferay DXP 7.3, you can also access the A/B Test panel (via the flask icon) and view the test status for an experience through the [experience selection dialog](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md).
 1. If you have other Experiences for the Content Page, select the *Experience*.
-1. Review the test results under the *Active Test* tab:
+1. Review the test results under the *Active Test* section:
 
     * *Winner Declared*: One of the test variants met the Confidence Level Required.
     * *No Winner*: None of the test variants met the Confidence Level Required for the duration of the test.
