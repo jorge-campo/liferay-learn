@@ -1,17 +1,17 @@
 # Propagating Fragment Changes
 
-By default, [changes to the Fragment's configuration](../../developer-guide/developing-page-fragments/using-the-fragments-editor.md) do not propagate automatically to the [Content Pages](./content-pages-overview.md) using the Fragment. For example, if you use a [Button Fragment](./using-fragments.md#button) of *Primary* type and then change the configuration to use a *Secondary* type, a Content Page using the Fragment does not reflect the change by default. Using *Fragment Propagation*, you can modify this behavior, propagating your Fragment Configuration changes to the elements where the Fragment exists.
+By default, [changes to the Fragment's configuration](../../developer-guide/developing-page-fragments/using-the-fragments-editor.md) do not propagate automatically to the [Content Pages](./content-pages-overview.md) using the Fragment. For example, if you use a [Button Fragment](./using-fragments.md#button) of *Primary* type and then change the configuration to use a *Secondary* type, a Content Page using the Fragment does not reflect the change by default. Using *Fragment Propagation* you can modify this behavior and propagate your Fragment configuration changes to the elements where the Fragment exists.
 
 ```note::
    In addition to Content Pages, Propagation affects other elements where you use the Fragment, like Master Pages, Page Templates, and Display Page Templates. 
 ```
 
-You can propagate the Fragment Configuration changes:
+You can propagate the Fragment configuration changes in two different ways:
 
-- [Of a single Fragment](#propagating-the-fragment-configuration-of-a-single-fragment)
-- [Of of all the Fragments (by default)](#propagating-the-fragment-configuration-of-all-the-fragments)
+- [For a single Fragment](#propagating-the-fragment-configuration-for-a-single-fragment)
+- [For of all the Fragments](#propagating-the-fragment-configuration-for-all-the-fragments)
 
-## Propagating the Fragment Configuration of a Single Fragment
+## Propagating the Fragment Configuration for a Single Fragment
 
 With this Propagation procedure, you can update all the elements where you use a Fragment with the most recent Fragment configuration. Use this procedure after [updating the Fragment](../../developer-guide/developing-page-fragments/using-the-fragments-editor.md) with the desired Configuration.
 
@@ -34,7 +34,7 @@ With this Propagation procedure, you can update all the elements where you use a
 
     ![Select the elements where you want to propagate the latest Fragment changes.](./propagating-fragment-changes/images/03.png)
 
-## Propagating the Fragment Configuration of All the Fragments
+## Propagating the Fragment Configuration for All the Fragments
 
 Using this option, any Fragment [configuration change](../../developer-guide/developing-page-fragments/using-the-fragments-editor.md) propagates automatically to all the elements where the Fragment exists. To change this option you need access to the Liferay DXP [System Settings](../../../system-administration/configuring-liferay/system-settings.md).
 
