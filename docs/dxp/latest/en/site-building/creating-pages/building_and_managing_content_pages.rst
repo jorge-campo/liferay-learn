@@ -14,6 +14,7 @@ Building and Managing Content Pages
    building-and-managing-content-pages/using-fragment-comments.md
    building-and-managing-content-pages/configuring-fragment-styles.md
    building-and-managing-content-pages/fragment-styles-reference.md
+   building-and-managing-content-pages/propagating-fragment-changes.md
 
 -  :doc:`/site-building/creating-pages/building-and-managing-content-pages/content-pages-overview`
 -  :doc:`/site-building/creating-pages/building-and-managing-content-pages/building-content-pages`
@@ -25,3 +26,4 @@ Building and Managing Content Pages
 -  :doc:`/site-building/creating-pages/building-and-managing-content-pages/using-fragment-comments`
 -  :doc:`/site-building/creating-pages/building-and-managing-content-pages/configuring-fragment-styles`
 -  :doc:`/site-building/creating-pages/building-and-managing-content-pages/fragment-styles-reference`
+-  :doc:`/site-building/creating-pages/building-and-managing-content-pages/propagating-fragment-changes`
