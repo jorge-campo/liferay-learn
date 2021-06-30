@@ -8,6 +8,7 @@ Tags and Categories
    tags-and-categories/defining-categories-and-vocabularies-for-content.md
    tags-and-categories/geolocating-assets.md
    tags-and-categories/session-property-vocabularies.md
+   tags-and-categories/category-based-navigation-with-display-pages.md
    tags-and-categories/auto_tagging.rst
    tags-and-categories/developer_guide.rst
 
@@ -16,6 +17,7 @@ Tags and Categories
 -  :doc:`/content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content`
 -  :doc:`/content-authoring-and-management/tags-and-categories/geolocating-assets`
 -  :doc:`/content-authoring-and-management/tags-and-categories/session-property-vocabularies`
+-  :doc:`/content-authoring-and-management/category-based-navigation-with-display-pages.md`
 
 Auto Tagging
 ------------
