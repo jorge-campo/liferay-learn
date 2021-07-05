@@ -1,8 +1,14 @@
 # Category-Based Navigation with Display Pages
 
+# Using Categories in Display Pages
+
 > Available: Liferay DXP 7.4+.
 
-Using a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) you can publish Web Content, Documents, and Blog Entries in a [Display Page](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Starting with Liferay DXP 7.4, you can also create a Display Page Template to show Categories on a Display Page. If your company sells multiple products and you organize these products in [Categories](../tags-and-categories/organizing-content-with-categories-and-tags.md), you can use Category-based navigation to create and present items in your catalog.
+Using a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) you can publish Web Content, Documents, and Blog Entries in a [Display Page](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Starting with Liferay DXP 7.4, you can also create a Display Page Template to show Categories on a Display Page. If your company sells multiple products and you organize these products in [Categories](../tags-and-categories/organizing-content-with-categories-and-tags.md), you can use Category-based navigation to create and present the items in your catalog.
+
+## Assigning Display Pages to Categories
+
+
 
 The steps to display your Categories on a Display Page are:
 
@@ -16,7 +22,7 @@ This step-by-step example shows you how to use Categories in combination with a 
 
 ### Step 1: Creating and Editing the Categories
 
-Create the Categories if they do not exist yet, and edit them to include the information you want to map on the Display Page. This example creates two new categories with a description and a picture, each category corresponding to a different insurance service.
+Create the Categories if they do not exist yet, and edit them to include the information you want to map on the Display Page. This example creates two new Categories with a description and a picture, each Category corresponding to different insurance services.
 
 1. [Create a new Category](./defining-categories-and-vocabularies-for-content.md#defininig-categories) named *Car Insurance*.
 1. In the Categories application, click the *Actions* (![Actions](../../images/icon-actions.png)) menu for your new category and select *Edit*.
