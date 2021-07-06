@@ -1,12 +1,13 @@
-# Category-Based Navigation with Display Pages
-
-# Using Categories in Display Pages
+# Displaying Categories using Display Pages
 
 > Available: Liferay DXP 7.4+.
 
-Using a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) you can publish Web Content, Documents, and Blog Entries in a [Display Page](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Starting with Liferay DXP 7.4, you can also create a Display Page Template to show Categories on a Display Page. If your company sells multiple products and you organize these products in [Categories](../tags-and-categories/organizing-content-with-categories-and-tags.md), you can use Category-based navigation to create and present the items in your catalog.
+Using a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/displaying-content-with-display-page-templates.md) you can display Web Content, Documents, and Blog Entries in a [Display Page](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Starting with Liferay DXP 7.4, you can also create a Display Page Template to show Categories on a Display Page. This can be useful if your company sells multiple products or services that you [organize using Categories](../tags-and-categories/organizing-content-with-categories-and-tags.md). Because Display Pages are ideal to show a catalog of elements in a consistent way, you can use Category-based Display Pages to provide users a consistent experience when browsing your catalog.
 
-## Assigning Display Pages to Categories
+
+
+
+## Assigning Categories to Display Pages
 
 
 
@@ -28,7 +29,7 @@ Create the Categories if they do not exist yet, and edit them to include the inf
 1. In the Categories application, click the *Actions* (![Actions](../../images/icon-actions.png)) menu for your new category and select *Edit*.
 1. Click the *Details* tab and add a *Description* of this Category.
 
-    ![Edit the Category and add a Description.](./category-based-navigation-with-display-pages/images/01.png)
+    ![Edit the Category and add a Description.](./displaying-categories-using-display-pages/images/01.png)
 
 1. Click the *Images* tab and add an image for the Category using the *Add Image* (![Add Image](../../images/icon-add.png)) button.
 1. Click again on the *Details* tab and then click *Save*.
@@ -47,7 +48,7 @@ Starting with Liferay DXP 7.4, the Display Page Template includes a new option t
 
 1. Enter the *Name* of your Display Page Template and in the *Content Type* drop-down menu, select *Category*.
 
-    ![Select Navigation as the Content Type of your new Display Page Template.](./category-based-navigation-with-display-pages/images/02.png)
+    ![Select Navigation as the Content Type of your new Display Page Template.](./displaying-categories-using-display-pages/images/02.png)
 
 1. Click *Save*.
 
@@ -67,7 +68,7 @@ This example shows how to map the Category fields using a [Card Fragment](../../
 1. In the *Mapping* area and the *Source* drop-down menu, select *Category* if it's not selected already.
 1. Click the *Field* drop-down menu and select *Name* (C) to map your Category's name to the Card's title.
 
-    ![Map the Category fields in the Display Page Template using a Card Fragment.](./category-based-navigation-with-display-pages/images/03.png)
+    ![Map the Category fields in the Display Page Template using a Card Fragment.](./displaying-categories-using-display-pages/images/03.png)
 
 1. Repeat the same mapping process for the Card description and Card image. This list summarizes the Card Fragment to Category Field mapping in the example:
 
@@ -78,17 +79,17 @@ This example shows how to map the Category fields using a [Card Fragment](../../
 1. Click *Publish*.
 1. Under the *Display Page Templates* list, click the *Actions* (![Actions](../../images/icon-actions.png)) menu for the new Display Page Template and choose *Mark as Default*.
 
-    ![Set the Display Page Template as default using the Actions menu.](./category-based-navigation-with-display-pages/images/04.png)
+    ![Set the Display Page Template as default using the Actions menu.](./displaying-categories-using-display-pages/images/04.png)
 
 1. Go to *Site Administration* &rarr; *Categorization* &rarr; *Categories*.
 1. Click the Vocabulary with the Categories from [Step 1](#step-1-creating-and-editing-the-categories).
 1. On any Category, click the *Actions* (![Actions](../../images/icon-actions.png)) menu and select *View Display Page*.
 
-    ![Open the Display Page for one of the categories using the Actions Menu option.](./category-based-navigation-with-display-pages/images/05.png)
+    ![Open the Display Page for one of the categories using the Actions Menu option.](./displaying-categories-using-display-pages/images/05.png)
 
 The Display Page uses the mappings in the Display Page Template to show the Category fields. The Display Page URL is unique for the selected Category.
 
-![The Display Page template shows the Category fields and provides a unique URL.](./category-based-navigation-with-display-pages/images/06.png)
+![The Display Page template shows the Category fields and provides a unique URL.](./displaying-categories-using-display-pages/images/06.png)
 
 ## Related Information
 
