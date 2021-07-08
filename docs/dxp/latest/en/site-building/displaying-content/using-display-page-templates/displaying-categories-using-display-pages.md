@@ -2,11 +2,11 @@
 
 > Available: Liferay DXP 7.4+.
 
-Using a [Display Page Template](./about-display-page-templates-and-display-pages.md) you can publish Web Content, Documents, and Blog Entries in a [Display Page](../../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Starting with Liferay DXP 7.4, you can also publish Categories on a Display Page. This can be useful if you want to showcase multiple products or services that you [organize using Categories](../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md). Because Display Pages are ideal to show a catalog of elements in a consistent way, you can use Category-based Display Pages to provide users a consistent experience when browsing your products or services catalog.
+Using a [Display Page Template](./about-display-page-templates-and-display-pages.md) you can render Web Content, Documents, and Blog Entries in a [Display Page](../../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Starting with Liferay DXP 7.4, you can also render Categories on a Display Page. This can be useful if you want to showcase multiple products or services that you [organize using Categories](../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md). Because Display Pages are ideal to show a catalog of elements in a consistent way, you can use Category-based Display Pages to provide users a consistent experience when browsing your products or services catalog.
 
-## Publishing Categories in Display Pages
+## Displaying Categories in Display Pages
 
-You publish Categories in a Display Page in the same way you publish other types of Display Page content. There are two options:
+You render Categories in a Display Page in the same way you render other types of Display Page content. There are two options:
 
 - [Create a Display Page Template](../../creating-pages/building-and-managing-content-pages/adding-elements-to-content-pages.md) for Categories and set this template as the default one.
 - Select the Display Page Template of your choice when you [create or edit the Category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md).
@@ -26,12 +26,12 @@ The steps to display your Categories on a Display Page are:
 1. [Edit and publish the Display Page Template](#step-3-edit-and-publish-the-display-page-template).
 
 ```warning::
-   The following example shows how to modify a default Display Page Template. To avoid disruptions to your production Site, complete this procedure on a test Site.
+   The following example shows how to modify a default Display Page Template. To avoid disruptions in your production Site, complete this procedure on a test Site.
 ```
 
 ### Step 1: Creating and Editing the Categories
 
-Create the Categories if they do not exist yet, and edit them to include the information you want to map on the Display Page. This example creates two new Categories with a description and a picture, each Category corresponding to different service.
+Create the Categories if they do not exist yet, and edit them to include the information you want to map on the Display Page. This example creates two new Categories with a description and a picture, each Category corresponding to a different service.
 
 1. [Create a new Category](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defininig-categories)) named *Car Insurance*.
 1. In the Categories application, click the *Actions* (![Actions](../../../images/icon-actions.png)) menu for your new category and select *Edit*.
